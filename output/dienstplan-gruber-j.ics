@@ -1,0 +1,204 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Kalender Automation//Dienstplan//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dienstplan Gruber J.
+X-WR-TIMEZONE:Europe/Vienna
+BEGIN:VTIMEZONE
+TZID:Europe/Vienna
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:gruber-j-20261002@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261002T063000
+DTEND;TZID=Europe/Vienna:20261002T180000
+SUMMARY:07B - Tour 7 - BF - 06:30-18:00
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: 07B\; Dienst: Tour 7 - BF - 
+ 06:30-18:00\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: 
+ keine weiteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261005@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261005T060000
+DTEND;TZID=Europe/Vienna:20261005T180000
+SUMMARY:B1B - Tour B1 - BF - 06:00-18:00
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1B\; Dienst: Tour B1 - BF -
+  06:00-18:00\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder:
+  Lettner F. (B1F Rolle F)\, Prenninger J. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261006@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:SEF - SEF Ausbildung - 8h
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: SEF\; Dienst: SEF Ausbildung
+  - 8h\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine 
+ weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261007@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261007T060000
+DTEND;TZID=Europe/Vienna:20261007T180000
+SUMMARY:B1T - Tour B1 - TF - 06:00-18:00
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1T\; Dienst: Tour B1 - TF -
+  06:00-18:00\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder:
+  Aigner M. (B1F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261008@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261008T080000
+DTEND;TZID=Europe/Vienna:20261008T193000
+SUMMARY:15B - Tour 15 - BF - 08:00-19:30
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: 15B\; Dienst: Tour 15 - BF -
+  08:00-19:30\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder:
+  Palffy K. (15T Rolle T)\, Umgeher M. (15F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261009@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261009T080000
+DTEND;TZID=Europe/Vienna:20261009T193000
+SUMMARY:15B - Tour 15 - BF - 08:00-19:30
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: 15B\; Dienst: Tour 15 - BF -
+  08:00-19:30\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder:
+  Palffy K. (15T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261012@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261012T073000
+DTEND;TZID=Europe/Vienna:20261012T173000
+SUMMARY:T5F - Tour T5 - Fahrer - 07:30-17:30
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T5F\; Dienst: Tour T5 - Fahr
+ er - 07:30-17:30\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglie
+ der: Angerer F. (T5T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261013@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261013T060000
+DTEND;TZID=Europe/Vienna:20261013T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahr
+ er - 06:00-18:00\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglie
+ der: Pöttler D. (B1B Rolle B)\, ZD FSJ (B1F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261015@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261015T070000
+DTEND;TZID=Europe/Vienna:20261015T173000
+SUMMARY:T4F - Tour T4 - Fahrer - 07:00-17:30
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T4F\; Dienst: Tour T4 - Fahr
+ er - 07:00-17:30\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglie
+ der: Powolny L. (T4T Rolle T)\, ZD FSJ Fahrer RS (T4F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261016@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:T1F - Unbekanntes Dienstkürzel
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T1F\; Dienst: Unbekanntes Di
+ enstkürzel\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: 
+ Jungwirth L. (T1T Rolle T)\, ZD FSJ ohne RS (T1F Rolle F)\; Dauer: 8 Stunde
+ n\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261017@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261017T073000
+DTEND;TZID=Europe/Vienna:20261017T193000
+SUMMARY:R3B - RTW 3 - BF - 7:30-19:30
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: R3B\; Dienst: RTW 3 - BF - 7
+ :30-19:30\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: Ba
+ uer B. (R3F Rolle F)\, Perwein B. (R3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261021@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261021T060000
+DTEND;TZID=Europe/Vienna:20261021T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahr
+ er - 06:00-18:00\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglie
+ der: Ehrenreich D. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261022@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261022T070000
+DTEND;TZID=Europe/Vienna:20261022T173000
+SUMMARY:T4F - Tour T4 - Fahrer - 07:00-17:30
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T4F\; Dienst: Tour T4 - Fahr
+ er - 07:00-17:30\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglie
+ der: Cikic B. (T4T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261023@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261023T060000
+DTEND;TZID=Europe/Vienna:20261023T180000
+SUMMARY:B1T - Tour B1 - TF - 06:00-18:00
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1T\; Dienst: Tour B1 - TF -
+  06:00-18:00\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder:
+  Unterrainer C. (B1F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261027@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:A - LSt Ausbildung 8h
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 8
+ h\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weit
+ eren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261028@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261028T060000
+DTEND;TZID=Europe/Vienna:20261028T180000
+SUMMARY:B1B - Tour B1 - BF - 06:00-18:00
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1B\; Dienst: Tour B1 - BF -
+  06:00-18:00\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder:
+  Jungwirth L. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261029@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:A - LSt Ausbildung 8h
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 8
+ h\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weit
+ eren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:gruber-j-20261030@kalender-automation.local
+DTSTAMP:20261013T201019Z
+DTSTART;TZID=Europe/Vienna:20261030T063000
+DTEND;TZID=Europe/Vienna:20261030T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahr
+ er - 06:30-18:30\; Quelle: 2610 V2.pdf\; Planversion: 2\; Besatzungsmitglie
+ der: Pöttler D. (B2B Rolle B)
+END:VEVENT
+END:VCALENDAR
