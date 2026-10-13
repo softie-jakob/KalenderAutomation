@@ -1,17 +1,20 @@
 # Dienstplan-Kalender für Gruber J.
 
-Dieses Projekt liest Dienstplan-Textdateien, übernimmt ausschließlich die Zeile
-`Gruber J.` und erzeugt daraus einen abonnierbaren iCalendar-Feed.
+Dieses Projekt liest Dienstplan-Textdateien oder PDFs aus `input/`, übernimmt
+ausschließlich die Zeile `Gruber J.` und erzeugt daraus einen abonnierbaren
+iCalendar-Feed.
 
 ## Einrichtung
 
 ```sh
 cd "/Users/jakobg./Desktop/Kalender Automation/KalenderAutomation"
 mkdir -p input working output
-cp "/Users/jakobg./Desktop/Kalender Skill/01_ForReview/2610 V2.txt" input/
+cp "/Users/jakobg./Desktop/Kalender Skill/01_ForReview/2610 V2.pdf" input/
+python3 -m pip install -r requirements.txt
 ```
 
-Die Quelldatei wird nicht verändert. Die Ausgabe ist ausschließlich:
+Die Quelldatei wird nicht verändert. Bei einer PDF wird der extrahierte Text
+zusätzlich als `working/plan.txt` gespeichert. Die Ausgabe ist:
 
 ```text
 output/dienstplan-gruber-j.ics
@@ -32,9 +35,13 @@ erzeugt. Vor dem Veröffentlichen bitte die Vorschau und Warnungen prüfen.
 python3 -m src.dienstplan --watch --interval 10
 ```
 
+Der Watcher erkennt neue oder geänderte `.pdf`- und `.txt`-Dateien in `input/`.
 Bei mehreren Dateien wird die höchste erkannte Planversion verwendet. Bei
 gleicher Version gewinnt die zuletzt geänderte Datei. Exakte Duplikate werden
 über ihren SHA-256-Hash erkannt; sie ändern das Ergebnis nicht.
+
+Die PDF muss echten Text enthalten. Bei einer eingescannten PDF ist vorher OCR
+erforderlich.
 
 ## GitHub Pages automatisch aktualisieren
 

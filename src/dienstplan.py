@@ -80,10 +80,17 @@ def parse_legend(lines: Iterable[str]) -> dict[str, ShiftDefinition]:
 def _metadata(text: str) -> tuple[date, date, int, str]:
     period = re.search(r"Von:\s*(\d{2}\.\d{2}\.\d{4})\s+Bis:\s*(\d{2}\.\d{2}\.\d{4})", text)
     if not period:
+        period = re.search(
+            r"(\d{2}\.\d{2}\.\d{4})\s*Von:\s*Bis:\s*(\d{2}\.\d{2}\.\d{4})",
+            text,
+        )
+    if not period:
         raise ValueError("Zeitraum 'Von ... Bis ...' wurde nicht gefunden.")
     start = datetime.strptime(period.group(1), "%d.%m.%Y").date()
     end = datetime.strptime(period.group(2), "%d.%m.%Y").date()
     version_match = re.search(r"Version:\s*(\d+)", text)
+    if not version_match:
+        version_match = re.search(r"(\d+)\s*Version:", text)
     version = int(version_match.group(1)) if version_match else 0
     plan_match = re.search(r"Dienstplan:\s+(\S+)", text)
     plan_id = plan_match.group(1) if plan_match else "unbekannt"
@@ -106,8 +113,56 @@ def _tour_stem(code: str) -> Optional[str]:
     return match.group(1) if match else None
 
 
-def parse_plan(path: Path, target_person: str = TARGET_PERSON) -> Plan:
-    text = path.read_text(encoding="utf-8")
+def _pdf_row_values(text: str, person: str, expected_days: int) -> Optional[list[str]]:
+    lines = text.splitlines()
+    try:
+        start = next(
+            index for index, line in enumerate(lines)
+            if line.strip() == person or line.strip().startswith(f"{person} ")
+        )
+    except StopIteration:
+        return None
+    codes: list[str] = []
+    for index, line in enumerate(lines[start:], start):
+        tokens = line.split()
+        if index == start:
+            tokens = tokens[len(person.split()):]
+        for token in tokens:
+            if re.fullmatch(r"\d+:\d+", token):
+                return codes[:expected_days] if len(codes) >= expected_days else None
+            if re.fullmatch(r"[A-Za-zÜüÄäÖöß0-9/.-]+", token):
+                codes.append(token)
+    return codes[:expected_days] if len(codes) >= expected_days else None
+
+
+def _read_source_text(path: Path) -> str:
+    if path.suffix.lower() == ".txt":
+        return path.read_text(encoding="utf-8")
+    if path.suffix.lower() != ".pdf":
+        raise ValueError(f"Nicht unterstütztes Eingabeformat: {path.suffix or 'unbekannt'}")
+    try:
+        from pypdf import PdfReader
+    except ImportError as error:
+        raise RuntimeError(
+            "PDF-Verarbeitung benötigt pypdf. Installiere die Abhängigkeiten mit "
+            "'python3 -m pip install -r requirements.txt'."
+        ) from error
+    reader = PdfReader(str(path))
+    text = "\n".join(page.extract_text() or "" for page in reader.pages)
+    if not text.strip():
+        raise ValueError(
+            f"Aus {path.name} konnte kein Text extrahiert werden. "
+            "Die PDF benötigt möglicherweise OCR."
+        )
+    return text
+
+
+def parse_plan(
+    path: Path,
+    target_person: str = TARGET_PERSON,
+    text: Optional[str] = None,
+) -> Plan:
+    text = _read_source_text(path) if text is None else text
     start, end, version, plan_id = _metadata(text)
     lines = text.splitlines()
     legend_start = next(
@@ -125,6 +180,10 @@ def parse_plan(path: Path, target_person: str = TARGET_PERSON) -> Plan:
         if row is not None:
             rows[row[0]] = row[1]
     target_codes = rows.get(target_person)
+    if target_codes is None:
+        target_codes = _pdf_row_values(text, target_person, expected_days)
+        if target_codes is not None:
+            rows[target_person] = target_codes
     if target_codes is None:
         raise ValueError(f"Person {target_person!r} wurde nicht gefunden.")
 
@@ -242,21 +301,22 @@ def build_ics(plan: Plan, generated_at: Optional[datetime] = None) -> str:
     return "\r\n".join(_fold(line) for line in lines) + "\r\n"
 
 
-def select_latest_plan(input_dir: Path) -> tuple[Path, str]:
+def select_latest_plan(input_dir: Path) -> tuple[Path, str, Plan, str]:
     candidates = sorted(
         path for path in input_dir.iterdir()
-        if path.is_file() and path.suffix.lower() == ".txt"
+        if path.is_file() and path.suffix.lower() in {".txt", ".pdf"}
     )
     if not candidates:
-        raise FileNotFoundError(f"Keine TXT-Datei in {input_dir} gefunden.")
-    parsed: list[tuple[Path, Plan]] = []
+        raise FileNotFoundError(f"Keine TXT- oder PDF-Datei in {input_dir} gefunden.")
+    parsed: list[tuple[Path, Plan, str]] = []
     for path in candidates:
-        parsed.append((path, parse_plan(path)))
-    selected_path, selected_plan = max(
+        text = _read_source_text(path)
+        parsed.append((path, parse_plan(path, text=text), text))
+    selected_path, selected_plan, selected_text = max(
         parsed, key=lambda item: (item[1].version, item[0].stat().st_mtime)
     )
     digest = hashlib.sha256(selected_path.read_bytes()).hexdigest()
-    return selected_path, digest
+    return selected_path, digest, selected_plan, selected_text
 
 
 def publish_output(root: Path, pages_dir: Path) -> None:
@@ -285,9 +345,9 @@ def process_once(root: Path, pages_dir: Optional[Path] = None) -> Plan:
     output_dir = root / "output"
     working_dir.mkdir(exist_ok=True)
     output_dir.mkdir(exist_ok=True)
-    source, digest = select_latest_plan(input_dir)
-    plan = parse_plan(source)
+    source, digest, plan, source_text = select_latest_plan(input_dir)
     (working_dir / "last-input.sha256").write_text(f"{digest}  {source.name}\n", encoding="utf-8")
+    (working_dir / "plan.txt").write_text(source_text, encoding="utf-8")
     (working_dir / "preview.txt").write_text(render_preview(plan), encoding="utf-8")
     (output_dir / "dienstplan-gruber-j.ics").write_text(build_ics(plan), encoding="utf-8")
     if pages_dir is not None:
@@ -321,14 +381,15 @@ def watch(root: Path, interval: float, pages_dir: Optional[Path] = None) -> None
         input_dir = root / "input"
         signature = tuple(
             sorted((path.name, path.stat().st_size, path.stat().st_mtime_ns)
-                   for path in input_dir.glob("*.txt") if path.is_file())
+                   for path in input_dir.iterdir()
+                   if path.is_file() and path.suffix.lower() in {".txt", ".pdf"})
         ) if input_dir.exists() else ()
         if signature != last_signature:
             try:
                 process_once(root, pages_dir)
                 print("Dienstplan verarbeitet.")
                 last_signature = signature
-            except (FileNotFoundError, ValueError) as error:
+            except (FileNotFoundError, RuntimeError, ValueError) as error:
                 print(f"Verarbeitung fehlgeschlagen: {error}")
                 last_signature = signature
         time.sleep(interval)

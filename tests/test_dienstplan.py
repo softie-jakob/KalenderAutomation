@@ -35,6 +35,26 @@ class DienstplanTests(unittest.TestCase):
         self.assertIn("DTSTART;VALUE=DATE:20261003", ics)
         self.assertNotIn("UID:gruber-j-20261001", ics)
 
+    def test_process_saves_extracted_text_and_ics(self) -> None:
+        from pathlib import Path
+        import tempfile
+
+        from src.dienstplan import process_once
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("input", "working", "output"):
+                (root / name).mkdir()
+            (root / "input" / "plan.txt").write_text(TEXT, encoding="utf-8")
+
+            process_once(root)
+
+            self.assertEqual(
+                (root / "working" / "plan.txt").read_text(encoding="utf-8"),
+                TEXT,
+            )
+            self.assertTrue((root / "output" / "dienstplan-gruber-j.ics").exists())
+
 
 if __name__ == "__main__":
     unittest.main()
