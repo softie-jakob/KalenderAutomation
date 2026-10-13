@@ -108,9 +108,13 @@ def _row_values(line: str, expected_days: int) -> Optional[tuple[str, list[str]]
     return " ".join(name_tokens), codes
 
 
-def _tour_stem(code: str) -> Optional[str]:
-    match = re.fullmatch(r"([A-Za-zÜü]*\d+)[BFT]", code)
-    return match.group(1) if match else None
+def _tour_and_role(code: str) -> Optional[tuple[str, str]]:
+    if len(code) != 3 or not all(character.isalnum() for character in code):
+        return None
+    role = code[2].upper()
+    if role not in {"B", "F", "T"}:
+        return None
+    return code[:2].upper(), role
 
 
 def _pdf_row_values(text: str, person: str, expected_days: int) -> Optional[list[str]]:
@@ -206,14 +210,18 @@ def parse_plan(
         elif code not in SPECIAL_ALL_DAY_CODES and not definition.is_timed:
             warnings.append(f"{day.isoformat()}: {code} hat keine auswertbare Uhrzeit.")
         crew_members: list[str] = []
-        stem = _tour_stem(code)
-        if stem is not None:
+        tour_and_role = _tour_and_role(code)
+        if tour_and_role is not None:
+            tour, _ = tour_and_role
             for name, person_codes in rows.items():
                 if name == target_person:
                     continue
                 other_code = person_codes[offset]
-                if _tour_stem(other_code) == stem:
-                    crew_members.append(f"{name} ({other_code})")
+                other_tour_and_role = _tour_and_role(other_code)
+                if other_tour_and_role is not None and other_tour_and_role[0] == tour:
+                    crew_members.append(
+                        f"{name} ({other_code} Rolle {other_tour_and_role[1]})"
+                    )
         shifts.append(Shift(day, definition, path.name, version, tuple(sorted(crew_members))))
     return Plan(path.name, plan_id, start, end, version, tuple(shifts), tuple(warnings))
 

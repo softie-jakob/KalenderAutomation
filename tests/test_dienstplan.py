@@ -31,9 +31,25 @@ class DienstplanTests(unittest.TestCase):
         self.assertEqual(len(plan.shifts), 2)
         self.assertIn("UID:gruber-j-20261002@kalender-automation.local", ics)
         self.assertIn("Besatzungsmitglieder: Kol", ics)
-        self.assertIn("lege T. (07T)", ics)
+        self.assertIn("lege T. (07T Rolle T)", ics)
         self.assertIn("DTSTART;VALUE=DATE:20261003", ics)
         self.assertNotIn("UID:gruber-j-20261001", ics)
+
+    def test_crew_matches_first_two_characters_and_reports_role(self) -> None:
+        from pathlib import Path
+        import tempfile
+
+        text = TEXT.replace("07B SEF", "B1B SEF").replace("07T .", "B1T .")
+        text = text.replace("07B   Tour 7", "B1B   Tour B1").replace(
+            "SEF   SEF", "B1T   Tour B1 - TF - 06:30-18:00   SEF   SEF"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "plan.txt"
+            path.write_text(text, encoding="utf-8")
+            plan = parse_plan(path)
+            ics = build_ics(plan)
+
+        self.assertIn("Kollege T. (B1T Rolle T)", ics.replace("\r\n ", ""))
 
     def test_process_saves_extracted_text_and_ics(self) -> None:
         from pathlib import Path

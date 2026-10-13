@@ -67,9 +67,10 @@ unbekannt“ ausgegeben. Für alle anderen Dienste werden Beginn und Ende nur au
 der Legende der Quelldatei gelesen.
 
 Bei Tour-/Fahrzeugkürzeln werden zusätzlich die Personen ermittelt, die am
-selben Datum denselben Tourstamm verwenden. Beispielsweise gehören `B1B`,
-`B1T` und `B1F` zur gemeinsamen Besatzung der Tour B1. Die Namen und
-Kürzel dieser Besatzungsmitglieder werden in die jeweilige
+selben Datum dieselbe Tour verwenden. Dafür werden die ersten zwei Zeichen als
+Tourkennung und das dritte Zeichen als Rolle verwendet. Beispielsweise gehören
+`B1B`, `B1T` und `B1F` zur gemeinsamen Besatzung der Tour B1. Die Namen,
+Kürzel und Rollen dieser Besatzungsmitglieder werden in die jeweilige
 Terminbeschreibung geschrieben. Für nicht zuordenbare Sonderkürzel wird
 `keine weiteren erkannt` angegeben.
 
