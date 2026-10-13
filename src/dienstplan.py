@@ -61,7 +61,7 @@ def _parse_time(value: str) -> Optional[dt_time]:
 
 
 def _parse_definition(code: str, description: str) -> ShiftDefinition:
-    times = re.findall(r"(?<!\d)(\d{1,2}):(\d{2})", description)
+    times = re.findall(r"(?<!\d)(\d{1,2})\s*:\s*(\d{2})", description)
     start = dt_time(int(times[0][0]), int(times[0][1])) if len(times) >= 1 else None
     end = dt_time(int(times[1][0]), int(times[1][1])) if len(times) >= 2 else None
     return ShiftDefinition(code, description.strip(), start, end)
@@ -72,6 +72,20 @@ def parse_legend(lines: Iterable[str]) -> dict[str, ShiftDefinition]:
     for line in lines:
         pattern = r"([A-Za-zÜü0-9/]+)\s+(.+?)(?=\s{2,}[A-Za-zÜü0-9/]+\s+|$)"
         for match in re.finditer(pattern, line.strip()):
+            code, description = match.groups()
+            definitions[code] = _parse_definition(code, description)
+        for match in re.finditer(
+            r"\b([A-Za-zÜü0-9/]+)\s+(.+?"
+            r"\d{1,2}\s*:\s*\d{2}\s*-\s*\d{1,2}\s*:\s*\d{2}[h]?)"
+            r"(?=\s+[A-Za-zÜü0-9/]+\s+|$)",
+            line.strip(),
+        ):
+            code, description = match.groups()
+            definitions[code] = _parse_definition(code, description)
+        for match in re.finditer(
+            r"\b(A|SEF)\s+([^0-9\n]*?(?:8h|4h))(?=\s+[A-Za-zÜü0-9/]+\s+|$)",
+            line.strip(),
+        ):
             code, description = match.groups()
             definitions[code] = _parse_definition(code, description)
     return definitions
@@ -184,10 +198,23 @@ def parse_plan(
         if row is not None:
             rows[row[0]] = row[1]
     target_codes = rows.get(target_person)
+    pdf_rows = False
     if target_codes is None:
         target_codes = _pdf_row_values(text, target_person, expected_days)
         if target_codes is not None:
             rows[target_person] = target_codes
+            pdf_rows = True
+    if pdf_rows:
+        for line in lines:
+            candidate = line.strip()
+            if (
+                " " in candidate
+                and re.fullmatch(r"[A-Za-zÄÖÜäöüß ./'-]+", candidate)
+                and not candidate.startswith(("Dienst", "Gedruckt", "von Benutzer"))
+            ):
+                values = _pdf_row_values(text, candidate, expected_days)
+                if values is not None:
+                    rows[candidate] = values
     if target_codes is None:
         raise ValueError(f"Person {target_person!r} wurde nicht gefunden.")
 
