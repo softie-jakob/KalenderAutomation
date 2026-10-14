@@ -6,6 +6,7 @@ import re
 import shutil
 import subprocess
 import time
+from threading import Event
 from difflib import unified_diff
 from dataclasses import dataclass
 from datetime import date, datetime, time as dt_time, timedelta, timezone
@@ -650,9 +651,10 @@ def watch(
     interval: float,
     pages_dir: Optional[Path] = None,
     target_person: str = TARGET_PERSON,
+    stop_event: Optional[Event] = None,
 ) -> None:
     last_signature: Optional[tuple[tuple[str, int, int], ...]] = None
-    while True:
+    while stop_event is None or not stop_event.is_set():
         input_dir = root / "input"
         signature = tuple(
             sorted((path.name, path.stat().st_size, path.stat().st_mtime_ns)
@@ -667,7 +669,10 @@ def watch(
             except (FileNotFoundError, RuntimeError, ValueError) as error:
                 print(f"Verarbeitung fehlgeschlagen: {error}")
                 last_signature = signature
-        time.sleep(interval)
+        if stop_event is not None and stop_event.wait(interval):
+            break
+        if stop_event is None:
+            time.sleep(interval)
 
 
 def main() -> None:

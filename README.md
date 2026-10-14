@@ -119,6 +119,20 @@ working/plan.txt          extrahierter Text der zuletzt ausgewählten Quelle
 Die PDF-Dateien in `input/` werden nicht verändert, außer dass ältere Versionen
 nach erfolgreicher Verarbeitung archiviert und dort entfernt werden.
 
+## 4a. Grafische Oberfläche
+
+Alle Befehle können auch über eine grafische Oberfläche ausgeführt werden:
+
+```sh
+python3 -m src.interface
+```
+
+Über die Oberfläche kannst du Dienstplan-Dateien auswählen und nach `input/`
+kopieren, einen Dienstplan normal oder als Dry-Run verarbeiten, zwei Personen
+vergleichen, den Watch-Modus starten oder stoppen und optional in ein lokales
+GitHub-Pages-Repository veröffentlichen. Das Fenster bleibt während des
+Watch-Modus bedienbar.
+
 ## 5. Änderungen zuerst nur anzeigen (`--dry-run`)
 
 Mit `--dry-run` kannst du prüfen, was passieren würde:
