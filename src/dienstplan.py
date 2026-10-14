@@ -55,6 +55,16 @@ class Plan:
     warnings: tuple[str, ...]
 
 
+def _filename_plan_key(path: Path) -> Optional[tuple[int, int, int]]:
+    match = re.fullmatch(r"(\d{2})(\d{2})\s+V(\d+)", path.stem, re.IGNORECASE)
+    if not match:
+        return None
+    year, month, version = (int(value) for value in match.groups())
+    if not 1 <= month <= 12:
+        return None
+    return 2000 + year, month, version
+
+
 def _parse_time(value: str) -> Optional[dt_time]:
     match = re.search(r"(\d{1,2}):(\d{2})", value)
     return dt_time(int(match.group(1)), int(match.group(2))) if match else None
@@ -308,8 +318,8 @@ def build_ics(plan: Plan, generated_at: Optional[datetime] = None) -> str:
         summary = f"{definition.code} - {definition.description}"
         details = (
             f"Person: {TARGET_PERSON}; Dienstkürzel: {definition.code}; "
-            f"Dienst: {definition.description}; Quelle: {plan.source_name}; "
-            f"Planversion: {plan.version}"
+            f"Dienst: {definition.description}; Quelle: {shift.source_name}; "
+            f"Planversion: {shift.plan_version}"
         )
         if shift.crew_members:
             details += f"; Besatzungsmitglieder: {', '.join(shift.crew_members)}"
@@ -343,15 +353,46 @@ def select_latest_plan(input_dir: Path) -> tuple[Path, str, Plan, str]:
     )
     if not candidates:
         raise FileNotFoundError(f"Keine TXT- oder PDF-Datei in {input_dir} gefunden.")
-    parsed: list[tuple[Path, Plan, str]] = []
+    parsed: list[tuple[Path, Plan, str, tuple[int, int, int]]] = []
     for path in candidates:
         text = _read_source_text(path)
-        parsed.append((path, parse_plan(path, text=text), text))
-    selected_path, selected_plan, selected_text = max(
-        parsed, key=lambda item: (item[1].version, item[0].stat().st_mtime)
+        plan = parse_plan(path, text=text)
+        filename_key = _filename_plan_key(path)
+        if filename_key is None:
+            filename_key = (plan.start.year, plan.start.month, plan.version)
+        parsed.append((path, plan, text, filename_key))
+
+    latest_by_month: dict[tuple[int, int], tuple[Path, Plan, str, tuple[int, int, int]]] = {}
+    for item in parsed:
+        month_key = item[3][:2]
+        current = latest_by_month.get(month_key)
+        if current is None or item[3][2:] > current[3][2:] or (
+            item[3][2:] == current[3][2:] and item[0].stat().st_mtime > current[0].stat().st_mtime
+        ):
+            latest_by_month[month_key] = item
+
+    shifts_by_day: dict[date, Shift] = {}
+    warnings: list[str] = []
+    for path, plan, _text, _key in sorted(parsed, key=lambda item: item[3]):
+        shifts_by_day.update({shift.day: shift for shift in plan.shifts})
+    for _path, plan, _text, _key in sorted(latest_by_month.values(), key=lambda item: item[1].start):
+        warnings.extend(plan.warnings)
+    selected_path, selected_plan, selected_text, _ = max(
+        latest_by_month.values(), key=lambda item: item[3]
     )
-    digest = hashlib.sha256(selected_path.read_bytes()).hexdigest()
-    return selected_path, digest, selected_plan, selected_text
+    merged_plan = Plan(
+        source_name="Mehrere Dienstpläne",
+        plan_id=selected_plan.plan_id,
+        start=min(plan.start for _path, plan, _text, _key in latest_by_month.values()),
+        end=max(plan.end for _path, plan, _text, _key in latest_by_month.values()),
+        version=selected_plan.version,
+        shifts=tuple(shifts_by_day[day] for day in sorted(shifts_by_day)),
+        warnings=tuple(warnings),
+    )
+    digest = hashlib.sha256(
+        b"".join(path.read_bytes() for path, _plan, _text, _key in sorted(latest_by_month.values()))
+    ).hexdigest()
+    return selected_path, digest, merged_plan, selected_text
 
 
 def publish_output(root: Path, pages_dir: Path) -> None:

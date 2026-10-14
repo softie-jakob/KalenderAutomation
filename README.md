@@ -20,6 +20,14 @@ zusätzlich als `working/plan.txt` gespeichert. Die Ausgabe ist:
 output/dienstplan-gruber-j.ics
 ```
 
+Mehrere Dienstpläne können gleichzeitig in `input/` liegen. Dateinamen im Format
+`JJMM Vn.pdf` werden dabei automatisch ausgewertet, zum Beispiel `2610 V2.pdf`
+als Oktober 2026, Version 2. Pro Monat wird immer die höchste Version verwendet.
+Die ausgewählten Monate werden zu einem Kalender zusammengeführt. Ein neuer
+Monat wird ergänzt; eine korrigierte Version ersetzt die Termine desselben
+Datums. Bereits vorhandene Termine aus älteren Monaten bleiben erhalten und
+werden nicht gelöscht, nur weil sie in der Vergangenheit liegen.
+
 ## Einmalige Verarbeitung
 
 ```sh
@@ -36,8 +44,8 @@ python3 -m src.dienstplan --watch --interval 10
 ```
 
 Der Watcher erkennt neue oder geänderte `.pdf`- und `.txt`-Dateien in `input/`.
-Bei mehreren Dateien wird die höchste erkannte Planversion verwendet. Bei
-gleicher Version gewinnt die zuletzt geänderte Datei. Exakte Duplikate werden
+Bei mehreren Dateien wird pro Monat die höchste erkannte Planversion verwendet.
+Bei gleicher Version gewinnt die zuletzt geänderte Datei. Exakte Duplikate werden
 über ihren SHA-256-Hash erkannt; sie ändern das Ergebnis nicht.
 
 Die PDF muss echten Text enthalten. Bei einer eingescannten PDF ist vorher OCR

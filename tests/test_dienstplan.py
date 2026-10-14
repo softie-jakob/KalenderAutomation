@@ -71,6 +71,25 @@ class DienstplanTests(unittest.TestCase):
             )
             self.assertTrue((root / "output" / "dienstplan-gruber-j.ics").exists())
 
+    def test_multiple_months_use_filename_versions_and_are_merged(self) -> None:
+        from pathlib import Path
+        import tempfile
+        from src.dienstplan import process_once
+
+        october = TEXT.replace("01.10.2026 Bis: 03.10.2026", "01.10.2026 Bis: 03.10.2026")
+        november = TEXT.replace("01.10.2026 Bis: 03.10.2026", "01.11.2026 Bis: 03.11.2026")
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("input", "working", "output"):
+                (root / name).mkdir()
+            (root / "input" / "2610 V1.txt").write_text(october, encoding="utf-8")
+            (root / "input" / "2611 V1.txt").write_text(november, encoding="utf-8")
+            process_once(root)
+            ics = (root / "output" / "dienstplan-gruber-j.ics").read_text(encoding="utf-8")
+
+        self.assertIn("DTSTART;TZID=Europe/Vienna:20261002T063000", ics)
+        self.assertIn("DTSTART;TZID=Europe/Vienna:20261102T063000", ics)
+
 
 if __name__ == "__main__":
     unittest.main()
