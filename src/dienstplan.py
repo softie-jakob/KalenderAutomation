@@ -6,6 +6,7 @@ import re
 import shutil
 import subprocess
 import time
+from difflib import unified_diff
 from dataclasses import dataclass
 from datetime import date, datetime, time as dt_time, timedelta, timezone
 from pathlib import Path
@@ -63,6 +64,10 @@ def _filename_plan_key(path: Path) -> Optional[tuple[int, int, int]]:
     if not 1 <= month <= 12:
         return None
     return 2000 + year, month, version
+
+
+def _person_slug(person: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", person.lower()).strip("-")
 
 
 def _parse_time(value: str) -> Optional[dt_time]:
@@ -285,7 +290,11 @@ def _format_local(day: date, value: dt_time) -> str:
     return f"{day:%Y%m%d}T{value:%H%M%S}"
 
 
-def build_ics(plan: Plan, generated_at: Optional[datetime] = None) -> str:
+def build_ics(
+    plan: Plan,
+    generated_at: Optional[datetime] = None,
+    target_person: str = TARGET_PERSON,
+) -> str:
     generated_at = generated_at or datetime.now(timezone.utc)
     stamp = generated_at.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     lines = [
@@ -294,7 +303,7 @@ def build_ics(plan: Plan, generated_at: Optional[datetime] = None) -> str:
         f"PRODID:{PRODID}",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
-        "X-WR-CALNAME:Dienstplan Gruber J.",
+        f"X-WR-CALNAME:Dienstplan {target_person}",
         "X-WR-TIMEZONE:Europe/Vienna",
         "BEGIN:VTIMEZONE",
         "TZID:Europe/Vienna",
@@ -314,10 +323,10 @@ def build_ics(plan: Plan, generated_at: Optional[datetime] = None) -> str:
     ]
     for shift in plan.shifts:
         definition = shift.definition
-        uid = f"gruber-j-{shift.day:%Y%m%d}@kalender-automation.local"
+        uid = f"{_person_slug(target_person)}-{shift.day:%Y%m%d}@kalender-automation.local"
         summary = f"{definition.code} - {definition.description}"
         details = (
-            f"Person: {TARGET_PERSON}; Dienstkürzel: {definition.code}; "
+            f"Person: {target_person}; Dienstkürzel: {definition.code}; "
             f"Dienst: {definition.description}; Quelle: {shift.source_name}; "
             f"Planversion: {shift.plan_version}"
         )
@@ -346,7 +355,10 @@ def build_ics(plan: Plan, generated_at: Optional[datetime] = None) -> str:
     return "\r\n".join(_fold(line) for line in lines) + "\r\n"
 
 
-def select_latest_plan(input_dir: Path) -> tuple[Path, str, Plan, str]:
+def select_latest_plan(
+    input_dir: Path,
+    target_person: str = TARGET_PERSON,
+) -> tuple[Path, str, Plan, str]:
     candidates = sorted(
         path for path in input_dir.iterdir()
         if path.is_file() and path.suffix.lower() in {".txt", ".pdf"}
@@ -356,7 +368,7 @@ def select_latest_plan(input_dir: Path) -> tuple[Path, str, Plan, str]:
     parsed: list[tuple[Path, Plan, str, tuple[int, int, int]]] = []
     for path in candidates:
         text = _read_source_text(path)
-        plan = parse_plan(path, text=text)
+        plan = parse_plan(path, target_person=target_person, text=text)
         filename_key = _filename_plan_key(path)
         if filename_key is None:
             filename_key = (plan.start.year, plan.start.month, plan.version)
@@ -395,8 +407,80 @@ def select_latest_plan(input_dir: Path) -> tuple[Path, str, Plan, str]:
     return selected_path, digest, merged_plan, selected_text
 
 
-def publish_output(root: Path, pages_dir: Path) -> None:
-    source = root / "output" / "dienstplan-gruber-j.ics"
+def _event_map(ics: str) -> dict[str, str]:
+    unfolded = re.sub(r"\r?\n[ \t]", "", ics).replace("\r\n", "\n")
+    events = {}
+    for block in re.findall(r"BEGIN:VEVENT\n(.*?)\nEND:VEVENT", unfolded, re.DOTALL):
+        uid = re.search(r"(?:^|\n)UID:(.+)", block)
+        if uid:
+            events[uid.group(1)] = re.sub(r"^DTSTAMP:.*\n", "", block, flags=re.MULTILINE)
+    return events
+
+
+def render_change_report(old_ics: str, new_ics: str) -> str:
+    old_events = _event_map(old_ics)
+    new_events = _event_map(new_ics)
+    added = sorted(set(new_events) - set(old_events))
+    removed = sorted(set(old_events) - set(new_events))
+    changed = sorted(uid for uid in set(old_events) & set(new_events)
+                     if old_events[uid] != new_events[uid])
+    lines = [
+        f"Neue Termine: {len(added)}",
+        f"Geänderte Termine: {len(changed)}",
+        f"Entfernte Termine: {len(removed)}",
+        f"Unveränderte Termine: {len(set(old_events) & set(new_events)) - len(changed)}",
+    ]
+    for label, uids in (("NEU", added), ("GEÄNDERT", changed), ("ENTFERNT", removed)):
+        for uid in uids:
+            lines.append(f"\n{label}: {uid}")
+            if label == "GEÄNDERT":
+                lines.extend(unified_diff(
+                    old_events[uid].splitlines(), new_events[uid].splitlines(),
+                    fromfile="alt", tofile="neu", lineterm="",
+                ))
+    return "\n".join(lines) + "\n"
+
+
+def _archive_superseded_inputs(input_dir: Path, archive_dir: Path) -> None:
+    candidates = [
+        path for path in input_dir.iterdir()
+        if path.is_file()
+        and path.suffix.lower() in {".txt", ".pdf"}
+        and _filename_plan_key(path) is not None
+    ]
+    latest: dict[tuple[int, int], Path] = {}
+    for path in candidates:
+        key = _filename_plan_key(path)
+        assert key is not None
+        month = key[:2]
+        current = latest.get(month)
+        if current is None:
+            latest[month] = path
+            continue
+        current_key = _filename_plan_key(current)
+        assert current_key is not None
+        if key[2] > current_key[2] or (
+            key[2] == current_key[2] and path.stat().st_mtime > current.stat().st_mtime
+        ):
+            latest[month] = path
+
+    superseded = [path for path in candidates if latest[_plan_month(path)] != path]
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    for path in sorted(superseded):
+        target = archive_dir / f"{stamp}-{path.name}"
+        shutil.copy2(path, target)
+        path.unlink()
+
+
+def _plan_month(path: Path) -> tuple[int, int]:
+    key = _filename_plan_key(path)
+    assert key is not None
+    return key[:2]
+
+
+def publish_output(root: Path, pages_dir: Path, target_person: str) -> None:
+    source = root / "output" / f"dienstplan-{_person_slug(target_person)}.ics"
     target = pages_dir / source.name
     pages_dir.mkdir(parents=True, exist_ok=True)
     if target.exists() and target.read_bytes() == source.read_bytes():
@@ -415,24 +499,47 @@ def publish_output(root: Path, pages_dir: Path) -> None:
         subprocess.run(["git", "-C", str(pages_dir), "push"], check=True)
 
 
-def process_once(root: Path, pages_dir: Optional[Path] = None) -> Plan:
+def process_once(
+    root: Path,
+    pages_dir: Optional[Path] = None,
+    target_person: str = TARGET_PERSON,
+    dry_run: bool = False,
+) -> Plan:
     input_dir = root / "input"
     working_dir = root / "working"
     output_dir = root / "output"
+    source, digest, plan, source_text = select_latest_plan(input_dir, target_person)
+    output_path = output_dir / f"dienstplan-{_person_slug(target_person)}.ics"
+    new_ics = build_ics(plan, target_person=target_person)
+    old_ics = output_path.read_text(encoding="utf-8") if output_path.exists() else ""
+    change_report = render_change_report(old_ics, new_ics)
+    if dry_run:
+        print(change_report, end="")
+        return plan
     working_dir.mkdir(exist_ok=True)
     output_dir.mkdir(exist_ok=True)
-    source, digest, plan, source_text = select_latest_plan(input_dir)
     (working_dir / "last-input.sha256").write_text(f"{digest}  {source.name}\n", encoding="utf-8")
     (working_dir / "plan.txt").write_text(source_text, encoding="utf-8")
-    (working_dir / "preview.txt").write_text(render_preview(plan), encoding="utf-8")
-    (output_dir / "dienstplan-gruber-j.ics").write_text(build_ics(plan), encoding="utf-8")
+    (working_dir / "preview.txt").write_text(
+        render_preview(plan, target_person), encoding="utf-8"
+    )
+    (working_dir / "changes.txt").write_text(change_report, encoding="utf-8")
+    if old_ics != new_ics and output_path.exists():
+        history_dir = working_dir / "history"
+        history_dir.mkdir(exist_ok=True)
+        stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+        (history_dir / f"{output_path.stem}-{stamp}.ics").write_text(old_ics, encoding="utf-8")
+    if old_ics != new_ics:
+        output_path.write_text(new_ics, encoding="utf-8")
+    _archive_superseded_inputs(input_dir, working_dir / "archive")
     if pages_dir is not None:
-        publish_output(root, pages_dir)
+        publish_output(root, pages_dir, target_person)
     return plan
 
 
-def render_preview(plan: Plan) -> str:
+def render_preview(plan: Plan, target_person: str = TARGET_PERSON) -> str:
     lines = [
+        f"Person: {target_person}",
         f"Quelle: {plan.source_name}",
         f"Plan: {plan.plan_id}, Version: {plan.version}",
         f"Zeitraum: {plan.start:%d.%m.%Y}–{plan.end:%d.%m.%Y}",
@@ -451,7 +558,99 @@ def render_preview(plan: Plan) -> str:
     return "\n".join(lines) + "\n"
 
 
-def watch(root: Path, interval: float, pages_dir: Optional[Path] = None) -> None:
+def _shift_label(shift: Optional[Shift]) -> str:
+    if shift is None:
+        return "kein Dienst"
+    definition = shift.definition
+    time_info = (
+        f"{definition.start:%H:%M}–{definition.end:%H:%M}"
+        if definition.is_timed else "ganztägig"
+    )
+    return f"{definition.code} ({time_info})"
+
+
+def render_comparison(first: Plan, first_person: str, second: Plan, second_person: str) -> str:
+    first_by_day = {shift.day: shift for shift in first.shifts}
+    second_by_day = {shift.day: shift for shift in second.shifts}
+    days = sorted(set(first_by_day) | set(second_by_day))
+    same: list[date] = []
+    different: list[date] = []
+    only_first: list[date] = []
+    only_second: list[date] = []
+    for day in days:
+        first_shift = first_by_day.get(day)
+        second_shift = second_by_day.get(day)
+        if first_shift is None:
+            only_second.append(day)
+        elif second_shift is None:
+            only_first.append(day)
+        elif _shift_label(first_shift) == _shift_label(second_shift):
+            same.append(day)
+        else:
+            different.append(day)
+
+    lines = [
+        f"# Dienstplanvergleich: {first_person} und {second_person}",
+        "",
+        f"- Zeitraum: {min(first.start, second.start):%d.%m.%Y}–{max(first.end, second.end):%d.%m.%Y}",
+        f"- Vergleichte Person 1: {first_person}",
+        f"- Vergleichte Person 2: {second_person}",
+        "",
+        "## Zusammenfassung",
+        "",
+        f"- Gleicher Dienst: {len(same)}",
+        f"- Unterschiedlicher Dienst: {len(different)}",
+        f"- Nur bei {first_person}: {len(only_first)}",
+        f"- Nur bei {second_person}: {len(only_second)}",
+        "",
+        "## Tagesübersicht",
+        "",
+        f"| Datum | {first_person} | {second_person} | Ergebnis |",
+        "|---|---|---|---|",
+    ]
+    for day in days:
+        first_label = _shift_label(first_by_day.get(day))
+        second_label = _shift_label(second_by_day.get(day))
+        if day in same:
+            result = "Gleich"
+        elif day in only_first:
+            result = f"Nur {first_person}"
+        elif day in only_second:
+            result = f"Nur {second_person}"
+        else:
+            result = "Unterschiedlich"
+        lines.append(f"| {day:%d.%m.%Y} | {first_label} | {second_label} | {result} |")
+    return "\n".join(lines) + "\n"
+
+
+def compare_people(
+    root: Path,
+    first_person: str,
+    second_person: str,
+    output_path: Optional[Path] = None,
+) -> Path:
+    input_dir = root / "input"
+    _, _, first_plan, _ = select_latest_plan(input_dir, first_person)
+    _, _, second_plan, _ = select_latest_plan(input_dir, second_person)
+    target = (root / output_path) if output_path is not None and not output_path.is_absolute() else output_path
+    target = target or (
+        root / "working" /
+        f"vergleich-{_person_slug(first_person)}-{_person_slug(second_person)}.md"
+    )
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(
+        render_comparison(first_plan, first_person, second_plan, second_person),
+        encoding="utf-8",
+    )
+    return target
+
+
+def watch(
+    root: Path,
+    interval: float,
+    pages_dir: Optional[Path] = None,
+    target_person: str = TARGET_PERSON,
+) -> None:
     last_signature: Optional[tuple[tuple[str, int, int], ...]] = None
     while True:
         input_dir = root / "input"
@@ -462,7 +661,7 @@ def watch(root: Path, interval: float, pages_dir: Optional[Path] = None) -> None
         ) if input_dir.exists() else ()
         if signature != last_signature:
             try:
-                process_once(root, pages_dir)
+                process_once(root, pages_dir, target_person)
                 print("Dienstplan verarbeitet.")
                 last_signature = signature
             except (FileNotFoundError, RuntimeError, ValueError) as error:
@@ -476,17 +675,36 @@ def main() -> None:
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--watch", action="store_true", help="input/ dauerhaft überwachen.")
     parser.add_argument("--interval", type=float, default=10.0)
+    parser.add_argument("--person", default=TARGET_PERSON, help="Name der Zielperson im Dienstplan.")
+    parser.add_argument("--dry-run", action="store_true", help="Nur Änderungen anzeigen, nichts schreiben.")
+    parser.add_argument(
+        "--compare-person",
+        help="Vergleicht --person mit dieser Person und erzeugt eine Markdown-Datei.",
+    )
+    parser.add_argument(
+        "--compare-output",
+        type=Path,
+        help="Optionaler Pfad für die Vergleichsdatei.",
+    )
     parser.add_argument(
         "--publish-dir",
         type=Path,
         help="Lokaler Checkout des GitHub-Pages-Repositories; Änderungen werden gepusht.",
     )
     args = parser.parse_args()
+    if args.compare_person:
+        if args.watch or args.dry_run or args.publish_dir:
+            parser.error("--compare-person kann nicht mit --watch, --dry-run oder --publish-dir verwendet werden.")
+        output = compare_people(args.root, args.person, args.compare_person, args.compare_output)
+        print(f"Vergleich gespeichert: {output}")
+        return
     if args.watch:
-        watch(args.root, args.interval, args.publish_dir)
+        if args.dry_run:
+            parser.error("--dry-run kann nicht zusammen mit --watch verwendet werden.")
+        watch(args.root, args.interval, args.publish_dir, args.person)
     else:
-        plan = process_once(args.root, args.publish_dir)
-        print(render_preview(plan))
+        plan = process_once(args.root, args.publish_dir, args.person, args.dry_run)
+        print(render_preview(plan, args.person))
 
 
 if __name__ == "__main__":

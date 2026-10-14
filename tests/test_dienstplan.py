@@ -1,7 +1,13 @@
 import unittest
 from datetime import date, datetime, timezone
 
-from src.dienstplan import build_ics, parse_legend, parse_plan
+from src.dienstplan import (
+    build_ics,
+    compare_people,
+    parse_legend,
+    parse_plan,
+    process_once,
+)
 
 
 TEXT = """Dienstplan: 020RKT Von: 01.10.2026 Bis: 03.10.2026 Version: 02
@@ -89,6 +95,47 @@ class DienstplanTests(unittest.TestCase):
 
         self.assertIn("DTSTART;TZID=Europe/Vienna:20261002T063000", ics)
         self.assertIn("DTSTART;TZID=Europe/Vienna:20261102T063000", ics)
+
+    def test_change_report_backup_archive_dry_run_and_person(self) -> None:
+        from pathlib import Path
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("input", "working", "output"):
+                (root / name).mkdir()
+            old_source = root / "input" / "2610 V1.txt"
+            source = root / "input" / "2610 V2.txt"
+            old_source.write_text(TEXT, encoding="utf-8")
+            source.write_text(TEXT, encoding="utf-8")
+
+            process_once(root, target_person="Gruber J.")
+            source.write_text(TEXT.replace("07B SEF", "07T SEF"), encoding="utf-8")
+            process_once(root, target_person="Gruber J.")
+
+            self.assertTrue(list((root / "working" / "history").glob("*.ics")))
+            self.assertTrue(list((root / "working" / "archive").glob("*-2610 V1.txt")))
+            self.assertFalse(old_source.exists())
+            self.assertIn("GEÄNDERT", (root / "working" / "changes.txt").read_text(encoding="utf-8"))
+            before = (root / "output" / "dienstplan-gruber-j.ics").read_bytes()
+            process_once(root, target_person="Gruber J.", dry_run=True)
+            self.assertEqual(before, (root / "output" / "dienstplan-gruber-j.ics").read_bytes())
+            self.assertIn("X-WR-CALNAME:Dienstplan Andere P.", build_ics(parse_plan(source), target_person="Andere P."))
+
+    def test_compare_people_writes_markdown(self) -> None:
+        from pathlib import Path
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "input").mkdir()
+            text = TEXT.replace("Gruber J. . 07B SEF", "Gruber J. . 07B SEF")
+            (root / "input" / "2610 V1.txt").write_text(text, encoding="utf-8")
+            target = compare_people(root, "Gruber J.", "Kollege T.")
+            markdown = target.read_text(encoding="utf-8")
+
+        self.assertIn("# Dienstplanvergleich: Gruber J. und Kollege T.", markdown)
+        self.assertIn("| 02.10.2026 | 07B (06:30–18:00) | 07T (ganztägig) | Unterschiedlich |", markdown)
 
 
 if __name__ == "__main__":
