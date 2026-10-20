@@ -162,13 +162,13 @@ Der Name muss genau so geschrieben werden, wie er im Dienstplan vorkommt.
 
 ## 7. Zwei Dienstpläne vergleichen
 
-Mit diesem Befehl vergleichst du `Gruber J.` mit `Biechl S.`:
+Mit diesem Befehl vergleichst du `Gruber J.` mit `Muster M.`:
 
 ```sh
 python3 -m src.dienstplan \
   --person "Gruber J." \
-  --compare-person "Biechl S." \
-  --compare-output "working/vergleich-gruber-biechl.md"
+  --compare-person "Muster M." \
+  --compare-output "working/vergleich-gruber-muster.md"
 ```
 
 Wichtig bei mehreren Zeilen: Der Backslash `\` muss jeweils das letzte Zeichen
