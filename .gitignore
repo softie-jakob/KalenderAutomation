@@ -1,6 +1,1 @@
-input/*
-!input/.gitkeep
-working/*
-!working/.gitkeep
-output/*
-!output/.gitkeep
+# No files are ignored in this repository.
