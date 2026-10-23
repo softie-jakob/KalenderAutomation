@@ -57,6 +57,31 @@ class DienstplanTests(unittest.TestCase):
 
         self.assertIn("Kollege T. (B1T Rolle T)", ics.replace("\r\n ", ""))
 
+    def test_pdf_rows_keep_first_code_after_name_marker(self) -> None:
+        from pathlib import Path
+        import tempfile
+
+        text = """Dienstplan: 020RKT Von: 01.10.2026 Bis: 03.10.2026 Version: 02
+01 02 03
+Gruber J. .
+07B
+.
+100:00
+Kollege T. .
+07T
+.
+.
+Kollege T. 100:00
+06B   Tour 6 - BF - 06:00-18:00   07B   Tour 7 - BF - 06:30-18:00
+07T   Tour 7 - TF - 06:30-18:00
+"""
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "plan.txt"
+            path.write_text(text, encoding="utf-8")
+            plan = parse_plan(path)
+
+        self.assertEqual(plan.shifts[0].crew_members, ("Kollege T. (07T Rolle T)",))
+
     def test_process_saves_extracted_text_and_ics(self) -> None:
         from pathlib import Path
         import tempfile

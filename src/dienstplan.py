@@ -228,9 +228,10 @@ def parse_plan(
                 and re.fullmatch(r"[A-Za-zÄÖÜäöüß ./'-]+", candidate)
                 and not candidate.startswith(("Dienst", "Gedruckt", "von Benutzer"))
             ):
-                values = _pdf_row_values(text, candidate, expected_days)
+                person = re.sub(r"(?:\s+\.)+$", "", candidate)
+                values = _pdf_row_values(text, person, expected_days)
                 if values is not None:
-                    rows[candidate] = values
+                    rows[person] = values
     if target_codes is None:
         raise ValueError(f"Person {target_person!r} wurde nicht gefunden.")
 
