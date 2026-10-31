@@ -1,6 +1,6 @@
 Person: Gruber J.
 Quelle: Mehrere Dienstpläne
-Plan: 020RKT, Version: 1
+Plan: 020RKT, Version: 2
 Zeitraum: 01.10.2026–30.11.2026
 
 Termine:

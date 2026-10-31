@@ -1,6 +1,6 @@
 Dienstplan
  
-Dienstplan: 020RKT 01.11.2026Von: Bis: 30.11.2026 01Version:
+Dienstplan: 020RKT 01.11.2026Von: Bis: 30.11.2026 02Version:
 November
 Ist
 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
@@ -13,7 +13,7 @@ Knöbl C. . . X
  B X
  R3F
  DF
- A XR .
+ B XR .
  R3F X
  DA
  R3F
@@ -25,24 +25,24 @@ Knöbl C. . . X
  AX
  AX
  DA .
- R3F 184:48
+ R3F 185:18
 Leitner A. .
  GM
  DF X .
  DF . .
  GM
- GM X
+ GM .
  DP
  DP
  GM .
  GM
- DF XR
+ DF .
  DF
  DF
  A/ .
  GMT
  GMT
- GMT X
+ GMT .
  DA . .
  DF 188:00
 Schober S. . X
@@ -88,14 +88,15 @@ Simhofer M.
  U
  NEN 198:02
 Stockmayr R. .
- DA . .
+ DA
+ SD .
  DF
  A/
  DA .
  B
  DP
  DP .
- A XR .
+ B XR .
  R3T
  SD
  DF
@@ -105,7 +106,7 @@ Stockmayr R. .
  DF
  DF
  DF .
- R3T 182:15
+ R3T 190:45
 Zehetner A. .
  GMT
  L
@@ -303,9 +304,7 @@ C2
  
 LStA .
  
-R2T
- 
-C1
+R2T .
  
 AX
  
@@ -335,7 +334,7 @@ A .
  
 R2T . .
  
-R4T 174:30
+R4T 164:30
 Canavate M. . .
  R1T X
  R5T
@@ -399,10 +398,10 @@ Leitner M.
  uA
  uA
  uA 0:00
-Gedruckt am 14.10.26
-von Benutzer 01760
+Gedruckt am 31.10.26
+von Benutzer 00100
 Seite
-1 von 12 atoss.com
+1 von 11 atoss.com
 November
 Ist
 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
@@ -469,8 +468,7 @@ Perwein B. .
  SKT
  R4F X
  A . . 169:25
-Ranstl F. .
- FD .
+Ranstl F. . . .
  R1T .
  R4T
  R4T .
@@ -485,7 +483,7 @@ Ranstl F. .
  R3T
  R5T
  FD
- U X . . 178:40
+ U X . . 167:40
 Schumacher B. . XR
  R2T . .
  HOT X . .
@@ -590,19 +588,19 @@ Angerer M. .
  07F . . XR .
  R1F
  R1F
- R3F . . .
- 04F
- 06F . XR
+ R3F
+ 06F . .
+ 04F . . XR
  R1F . X
  06F
  06F E
  05F XR .
  R4F 170:15
 Bauer B. .
- FD
+ R1F
  R2F .
  R1F
- R1F . .
+ R2F . .
  07F
  04F . .
  15F
@@ -614,7 +612,7 @@ Bauer B. .
  R1F
  R1F .
  04F
- R5F X . X 176:45
+ R5F X . X 178:00
 Bürger R. .
  U
  U
@@ -638,7 +636,7 @@ Bürger R. .
 Cecon J. . .
  FD
  19F .
- R2F . .
+ R1F . .
  20F
  R5F
  R4F X
@@ -679,13 +677,12 @@ Leitner M. .
  04F
  R5F . . .
  FD
- R4F
- R4F X
+ R4F . X
  FD . X
  15F
  R5F .
  19F XR .
- 06F 174:30
+ 06F 162:15
 Moser F. . . .
  R3F
  19F
@@ -702,8 +699,9 @@ Moser F. . . .
  15F
  20F XR X .
  FD 172:00
-Orkic I. .
- R1F .
+Orkic I.
+ K1
+ K1 .
  FD .
  06F
  05F .
@@ -719,7 +717,7 @@ Orkic I. .
  R4F
  15F .
  R3F .
- FD 179:45
+ FD 167:30
 Penninger R. . .
  05F
  16F .
@@ -738,10 +736,11 @@ Penninger R. . .
  15F 172:45
 Toth A. . . . . .
  05F
- R3F . . . . X X X . . . . .
+ R3F . . . . X X X . . . .
+ R4F
  16F X . . . . .
  R3F
- 15F . . 54:45
+ 15F . . 67:00
 Weisshuhn G. .
  R4F
  R3F . .
@@ -753,14 +752,14 @@ Weisshuhn G. .
  U . .
  05F .
  R3F
- FD
+ Ü3F
  06F
  A/ .
  R5F
  R5F
  19F
  02F . . .
- 05F 177:05
+ 05F 177:20
 RKT Hauptamtlich
 RS / F
 Ausweger S. .
@@ -882,10 +881,10 @@ Holzer J. .
  11F .
  Ü1F
  FD . . 175:15
-Gedruckt am 14.10.26
-von Benutzer 01760
+Gedruckt am 31.10.26
+von Benutzer 00100
 Seite
-2 von 12 atoss.com
+2 von 11 atoss.com
 November
 Ist
 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
@@ -907,7 +906,8 @@ Huber J. .
  11F
  02F .
  07F 176:45
-Klein T. .
+Klein T.
+ Ü1T
  04F
  FD .
  05F .
@@ -923,7 +923,7 @@ Klein T. .
  19F
  07F
  FD . .
- Ü1F . 171:30
+ Ü1F . 181:45
 Krautgartner P. .
  SKF
  SKF .
@@ -943,22 +943,22 @@ Krautgartner P. .
  11F . . 172:30
 Lesiak M. .
  19F
- 07F .
+ 07F
  FD
- 02F
- FD . X
+ FD
+ 02F . . X
  05F
  15F
  16F
- Ü1F . .
- FD
+ EXT . .
+ 02F
  U
  U
  U XR XR .
  FD . .
  11F
  07F
- 06F . . 173:00
+ 06F . . 172:00
 Loidl L.
  U
  U
@@ -979,7 +979,7 @@ Loidl L.
  20F
  07F
  16F . .
- FD 175:45
+ Ü1F 176:00
 Moßhammer M. .
  16F
  20F
@@ -1078,7 +1078,7 @@ Schroffner F. .
  11F .
  19F .
  19F . .
- FD
+ 20F
  SD
  11F .
  Ü1F
@@ -1087,7 +1087,7 @@ Schroffner F. .
  07F X
  Ü1F
  06F . .
- 19F 171:15
+ 19F 171:30
 Schorn R. .
  06F
  04F
@@ -1098,13 +1098,14 @@ Schorn R. .
  04F
  20F .
  04F .
- 20F
- SD . .
+ 05B
+ SD .
+ Ü3T
  20F XR . .
  20F
  FD
  FD .
- Ü1F . . 173:15
+ Ü1F . . 184:30
 Seeleitner G. .
  HOF . .
  Ü1F
@@ -1128,9 +1129,9 @@ Stöger S. . XR
  07F .
  FD
  20F .
+ 19F . . .
  19F .
- 06F .
- 19F . .
+ 06F
  19F
  19F
  04F .
@@ -1165,16 +1166,16 @@ Wendlinger J. .
  A1F
  A1F .
  P1F
- L X .
- 02F
+ L X . .
  02F
  A1F
- P1F . . .
+ P1F
+ L . .
  A1F .
  A1F
  P1F
  L X .
- Ü1F 173:45
+ SU 167:55
 RKT Hauptamtlich
 RS / TF
 Daurer R. .
@@ -1313,8 +1314,8 @@ Hofer J. .
  14F
  13F
  Ü2F X X . .
- 13F
- 01F . X X . . 99:15
+ 13F .
+ SAF X X . . 100:15
 Hueber F. .
  20F
  17T . .
@@ -1351,22 +1352,22 @@ Machreich D. .
  03T
  Ü2F .
  01F . . . . 86:45
-Gedruckt am 14.10.26
-von Benutzer 01760
+Gedruckt am 31.10.26
+von Benutzer 00100
 Seite
-3 von 12 atoss.com
+3 von 11 atoss.com
 November
 Ist
 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 Nestaval N.
  FD
- FD
+ T4F
  13T
- FD
+ 17F
  15T . .
  FD
  18T . .
- FD . . .
+ Ü1F . . .
  FD
  17T
  FD
@@ -1374,7 +1375,7 @@ Nestaval N.
  FD . .
  FD
  FD
- FD . . . . 176:15
+ FD . . . . 176:00
 Pernthaner S. .
  SAF .
  SAF
@@ -1398,11 +1399,11 @@ Pöschl J. .
  SAF
  18T . X
  U . .
- 03T
+ T5F
  06T .
  08F
  FD .
- FD .
+ 08F .
  05T
  FD
  01T
@@ -1410,7 +1411,7 @@ Pöschl J. .
  08F
  08F .
  Ü2F
- 20T . 173:25
+ 20T . 169:10
 Schiefer K. . . .
  H1F . . . .
  H1F
@@ -1423,7 +1424,7 @@ Schiefer K. . . .
 Santer L. . .
  14F
  14F
- FD .
+ T6F .
  08F .
  01F .
  01F
@@ -1437,24 +1438,24 @@ Santer L. . .
  09F .
  14F
  12F . .
- Ü2F 171:00
+ Ü2F 169:15
 Schmeißer S. .
- Ü1T .
+ Ü1T XR
  FD
  18T
  FD . .
  18T
- FD
- FD .
- H1T . . .
+ 03T
+ 18F
+ FD XR XR . .
  20T
  FD
- 12T
- FD . .
- FD . .
+ 12T XR XR .
+ FD .
+ FD
  15T
  17T . .
- Ü2T 178:15
+ Ü2T 178:00
 Schober D. . .
  03F
  03F XR
@@ -1525,29 +1526,29 @@ Bahr I. .
  17T
  11T .
  H1T
- FD . . .
+ H1T
+ 11T . .
  14T
- 13T .
- 06T
+ 13T . .
  06T . .
  06T
  06T .
  Ü2T
  03T .
- 12T 177:15
+ 12T 173:30
 Bucsits K. . .
  20T
  14T
  05T X X .
  SAT
- FD .
- 11T .
- FD . .
- 05T X . .
+ H1T .
+ 11T
+ 15T . . . . X .
+ 06T
  FD . . .
- 16T
+ FD
  14T
- FD X . . 132:00
+ FD X . . 132:45
 Cikic B. .
  02T
  15T
@@ -1560,53 +1561,54 @@ Cikic B. .
  08T . .
  09T
  07T
- 02T
+ 03T
  02T .
  Ü1T . .
  13T
  Ü2T
- 13T . . . 176:30
-Fornezzi P. . . . .
- Ü1T . X . . . . .
- 12T . .
- H1T . . . . . .
- SAT . . . . . . . 45:00
+ 13T . . . 177:30
+Fornezzi P. . . . . .
+ FD X . . . . .
+ 12T . . . . . .
+ FD . .
+ SAT . . . . . . . 44:00
 Friesacher V. . . . . .
- Ü1T X . .
- H1T . . .
- 15T .
- 14T . .
- 16T . . . . .
+ Ü1T X . . . . .
  Ü2T
- 20T . .
- Ü1T . 86:30
+ 15T . . . .
+ 16T
+ FD . . . . .
+ 20T
+ SAT .
+ Ü1T . 86:15
 Kersch P. . . .
  02T . .
  Ü1T .
  H1T
- 01T . .
- 01T
- 10T . .
- FD . . . . . .
- Ü2T . . . . . . 82:45
+ 01T .
+ FD
+ 01T . . .
+ FD . . .
+ 14T . .
+ Ü2T . . . . . . 95:15
 Malli L. .
  FD .
  01T
- 13T . X .
+ 02T . X .
  Ü1T . .
- 16T
+ 02T
  09T . .
  04T
  02T
  02T
- 03T .
+ 02T .
  02T .
  Ü2T
  07T
  02T
  01T .
  13T .
- 01T 177:00
+ 01T 175:00
 Machmudian J. .
  18T
  FD . .
@@ -1614,7 +1616,7 @@ Machmudian J. .
  11T .
  14T
  Ü1T
- FD XR X
+ Ü1T XR X
  12T . .
  19T
  16T
@@ -1623,30 +1625,29 @@ Machmudian J. .
  19T
  17T
  17T . . .
- 19T 173:30
-Nußbaumer F.
- Ü1T .
+ 19T 173:45
+Nußbaumer F. X
+ FD
  11T .
  H1T
  09T
  FD . .
- 09T
- Ü1T
- FD
- Ü2T
- 11T .
- 03T .
+ 09T X
+ 16T X X .
  03T
- Ü2T . . .
  05T
- 16T . .
- SAT . .
- FD 177:30
+ 03T
+ Ü2T X X .
+ 05T
+ 16T
+ 16T
+ FD X X X
+ FD 170:30
 Palffy K. .
  04T .
  H1T
  17T
- FD . .
+ 07T . .
  20T
  FD
  16T XR
@@ -1656,7 +1657,7 @@ Palffy K. .
  05T .
  11T . XR
  04T
- FD .
+ Ü2T .
  05T . .
  13T 174:30
 Schmoller M. . . . . . .
@@ -1664,22 +1665,6 @@ Schmoller M. . . . . . .
  Ü1T . . . . . .
  FD . . . . . .
  FD . . 43:30
-Spöcklberger E. .
- 06T
- H1T .
- 09T
- 13T . .
- FD .
- 09T
- Ü1T
- 08T .
- Ü1T .
- Ü2T .
- 09T X
- 14T . . .
- 11T
- 13T X . .
- FD 151:15
 Sommer B. . X X X
  14T . . . X X X
  Ü2T
@@ -1691,7 +1676,7 @@ Sommer B. . X X X
  SAT . . . X 84:00
 Sterzl F. . .
  19T X
- FD
+ Ü1T
  01T . .
  09T
  FD
@@ -1705,7 +1690,7 @@ Sterzl F. . .
  FD
  14T X .
  FD .
- SAT 174:30
+ SAT 174:45
 Thonhauser J. .
  H1T
  03T . X
@@ -1716,13 +1701,33 @@ Thonhauser J. .
  12T
  SAT . . . . XR 89:15
 ZD FSJ Fahrer RS
+Aigner M. .
+ B2F .
+ B1F
+ T7F
+ T1F
+ FD . X XR
+ T3F
+ B2F
+ T1F . .
+ T2F
+ 08F
+ 08F
+ B3F .
+ B2F .
+ T2F
+ B2F
+ R2B
+ B1F
+ T2F . .
+ T1F 198:30
 Cossmann N. .
  T6F
  17F
  T5F
- 17F .
+ K1 .
  B1F . X .
- 18F
+ T5F
  17F
  18F XR .
  17F
@@ -1734,7 +1739,7 @@ Cossmann N. .
  09T
  T5F
  T7F
- 14F . XR 187:30
+ 14F . XR 185:30
 Göschl M. . X
  T7F .
  Ü2F
@@ -1755,6 +1760,46 @@ Göschl M. . X
  T5F
  13F .
  03F 193:15
+Gasteiner M. . .
+ T2F
+ 08F
+ T3F
+ T3F . .
+ 08F
+ B3F
+ B3F
+ B3F
+ R1B . .
+ T3F
+ B3F
+ B3F .
+ T2F
+ FD .
+ B3F .
+ T3F
+ T2F
+ T1F X .
+ B1F 198:30
+Gruber J. .
+ 08F
+ B2F
+ B2F
+ T2F . . . X
+ B2F
+ 08F
+ T3F
+ T2F
+ FD . XR
+ T3F
+ T3F
+ T1F
+ B3F
+ FD .
+ T3F
+ R2B .
+ T1F
+ B2F . .
+ T3F 199:45
 Haslauer-Hadz.L .
  18F .
  T7F
@@ -1774,6 +1819,13 @@ Haslauer-Hadz.L .
  Ü2F
  B1F .
  17F 192:30
+Gedruckt am 31.10.26
+von Benutzer 00100
+Seite
+4 von 11 atoss.com
+November
+Ist
+01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 Henschel M. .
  T5F
  Ü2F
@@ -1801,17 +1853,30 @@ Kittl V.
  SAF .
  SAF . .
  13F
- SAF .
  SAF
+ 01F .
  SAF . .
- SAF 100:45
-Gedruckt am 14.10.26
-von Benutzer 01760
-Seite
-4 von 12 atoss.com
-November
-Ist
-01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+ SAF 99:45
+Kramers N. . X
+ B1F
+ B3F
+ B3F
+ B3F . .
+ T3F
+ 08F .
+ T2F
+ T3F
+ R3B .
+ B3F
+ T7F
+ T7F
+ T2F X X .
+ B2F
+ B1F
+ T4F
+ T3F
+ B3F . .
+ T2F 198:15
 Obereder S. .
  13F
  T6F .
@@ -1821,7 +1886,7 @@ Obereder S. .
  12F .
  14F
  12F
- T6F
+ 03F
  03F . .
  01T
  T5F
@@ -1831,7 +1896,7 @@ Obereder S. .
  T5F .
  18F
  08F .
- T6F 192:45
+ T6F 194:45
 Rebenich F. . .
  T5F
  13F
@@ -1839,8 +1904,7 @@ Rebenich F. . .
  12F . .
  T6F
  01F
- 03F .
- 03F
+ 03F . .
  B2F .
  T5F
  17F
@@ -1851,32 +1915,216 @@ Rebenich F. . .
  SAF .
  03F
  01F .
- 14F 197:45
+ 14F 186:30
+Unterrainer C. .
+ B3F
+ 08F .
+ 08F
+ T2F X .
+ B2F
+ B1F
+ R1B
+ 08F
+ B3F X . .
+ T4F
+ T2F
+ T3F
+ T3F
+ FD .
+ T1F .
+ B2F
+ T4F
+ T3F X .
+ B3F 196:30
 ZD FSJ
 Transportführer RS
-Huber P. .
- SAT .
- 19T
- 19T . . .
- Ü2T
- 13T .
+Brandauer G. .
+ 06B
+ T2T
+ B2T
+ R4B .
+ FD . .
+ T2T
+ 08T
  03T
- 11T
- 02T .
- 20T
- Ü1T
- 14T .
- 20T . .
- 01T
- 11T .
+ 04B X .
+ 14T
+ B3T .
+ B3T
+ 08T XR . .
+ 03B
+ FD
  05T
+ 07B XR .
+ FD 193:45
+Edlinger V. .
  01T
- 11T .
- 03T 193:00
-Justa R. .
+ 02T .
+ 01T
+ 02T X .
+ 13T
+ 14T .
+ 07T
+ 06T X . .
+ T5T
+ 01T
  15T
- SAT .
+ 20T X .
+ 16T
+ 14T
+ FD .
+ T5T
+ U .
+ T4T 184:56
+Ehrenreich D. .
+ T7T
+ 04B
+ FD
+ B1B .
+ 10B .
+ T2T
+ FD
+ FD
+ 08T .
+ 06B .
+ T5T
+ 14B .
+ 18B
+ 15B . .
+ T1T
+ T6T .
+ B2T
+ T1T . .
+ R2B 198:30
+Gerke D. . .
+ R4B
+ 08T
+ 13B . . . .
+ FD .
+ 13B
+ 12B . .
+ FD
+ 12B . X .
+ 13B .
+ FD .
+ 15B
+ 19B
+ 14B . .
+ R3B 151:15
+Haas K. .
+ R4B
+ T6T . .
+ FD
+ FD . .
+ 08T
+ T4T .
+ T4T X .
+ T4T .
+ T6T . XR XR .
+ 08T
+ T4T
+ T6T
+ FD .
+ 13B .
+ 14B 149:30
+Huber P. .
+ EXT
+ EXT
+ EXT
+ EXT
+ EXT . .
+ EXT
+ EXT
+ EXT
+ EXT
+ EXT . .
+ EXT
+ EXT
+ EXT .
+ EXT . .
+ EXT
+ EXT .
+ EXT
+ EXT . . . 198:00
+Hufnagl S. .
+ SAT
+ 19B .
+ B1T
+ T7T . .
+ 08T .
+ FD
+ R2B
+ T5T
+ 02B . X
+ FD
+ 01B
+ T1T
+ T7T
+ 06B . .
+ T2T
+ T5T
+ 01B
+ T2T . .
+ T2T 197:45
+Janschütz K.
+ B1T
+ 20T .
+ T2T
+ A1T
+ A1T
+ 04T . .
+ 20T
+ 15T .
  02T
+ B1T . .
+ 18T
+ 18T .
+ 19T . .
+ 18T
+ 15T . .
+ 18T
+ 08T . . 186:45
+Jäger K. .
+ 08T
+ 11B
+ FD
+ R2B .
+ 12B . .
+ FD
+ 18B .
+ FD . .
+ FD
+ 04B
+ 08T .
+ 01B
+ 02B .
+ B2B .
+ 03B
+ B1B
+ 04B . .
+ B1B 193:00
+Jungwirth L. . .
+ 12T .
+ T1T
+ 16T . . .
+ A1T .
+ 18T
+ 20T
+ B2T .
+ 19T .
+ 06T
+ 17T
+ 15T
+ 09T .
+ 04T
+ 03T
+ FD
+ 19T .
+ B1T . . 186:00
+Justa R. .
+ FD
+ SAT .
+ 13T
  Ü2T
  08T . .
  06T
@@ -1886,12 +2134,26 @@ Justa R. .
  06T
  H1T
  Ü1T . . . .
- A1T .
+ 01T .
  01T
  03T
  02T
  10T .
- 02T 191:00
+ 02T 190:45
+Köse Z. . .
+ 13T .
+ 15T .
+ B1T . . .
+ 13T
+ 20T
+ 14T . . . .
+ 19T
+ FD
+ 18T . . . .
+ 15T .
+ 12T
+ B2T .
+ 20T 141:00
 Lettner M. . X
  FD
  SAT
@@ -1914,7 +2176,7 @@ Lettner M. . X
 Malm L. . .
  16T
  Ü2T
- FD
+ 19T
  SAT . .
  04T
  19T .
@@ -1928,10 +2190,11 @@ Malm L. . .
  17T . X
  14T
  15T .
- 17T 187:30
-Mairoll T. . .
+ 17T 187:45
+Mairoll T. .
+ 15T
  Ü2T
- FD
+ 19T
  SAT
  14T X .
  16T
@@ -1942,18 +2205,17 @@ Mairoll T. . .
  H1T
  04T
  01T X
- 12T
+ FD
  Ü1T .
- 06T X
- 04T .
- 04T 187:00
+ 06T X . .
+ 04T 187:30
 Murauer A. .
  Ü2T
  07T .
  06T
- 17T
- 13T .
  FD
+ 13T .
+ 02T
  12T .
  04T X XR .
  02T
@@ -1965,14 +2227,33 @@ Murauer A. .
  Ü1T
  07T
  07T
- 02T . . 185:18
+ 02T . . 183:48
+Niedermoser N. .
+ FD
+ 03B
+ 15B .
+ FD . . .
+ 07B
+ FD .
+ 01B
+ 03B .
+ H1T
+ FD .
+ 04B
+ R1B . .
+ T3T
+ 08T
+ B2B X
+ 06B
+ 05B .
+ 04B 197:00
 Oberascher F. .
  13T .
  15T .
  04T
  14T . .
  SAT
- 12T .
+ SD .
  U
  U .
  18T
@@ -1984,15 +2265,33 @@ Oberascher F. .
  Ü1T
  03T
  07T .
- 05T 189:37
+ 05T 186:52
+Orth M.
+ B2T .
+ A1T .
+ 04T
+ 03T X .
+ A1T
+ 07T
+ 03T
+ 14T XR XR .
+ 16T
+ 13T .
+ FD
+ A1T
+ B2T . .
+ 05T
+ 05T .
+ T6T
+ 06T . . 185:00
 Ortner L. .
  05T
  18T
  12T .
- 07T
+ 07B
  06T .
  12T
- FD
+ 13T
  SAT . .
  04T .
  15T .
@@ -2002,62 +2301,210 @@ Ortner L. .
  H1T
  04T
  Ü1T . .
- 16T 187:30
-Reitzl E. .
+ 16T 187:15
+Powolny L. . X XR
+ R3B .
+ T5T
+ FD . .
+ T7T
+ 15B . . XR .
+ 15B .
+ FD
+ T4T
+ T5T
+ 10B . .
+ 14B
+ T7T
+ B3T . . .
+ T7T 142:30
+Pöttler D. .
+ FD
+ 01T X
+ 03T
+ 05T
+ B2T .
+ 19T .
+ T1T
  17T .
+ 07T .
+ 17T
+ 17T XR
+ 04T
+ 05T
+ B1T .
+ 14T . XR .
+ 04T
+ 01T . . 187:00
+Prantner V. .
+ 14B
+ 08T .
+ 08T
+ 08T XR .
+ 19B .
+ 12B XR
+ 14B X .
+ R3B
+ 08T . .
+ R3B . .
+ 18B .
+ 14B .
+ B3T . .
+ 18B 147:00
+Reitzl E. .
+ 17T
+ 14T
  16T . . . . . .
  01T
  SAT
- 19T . . .
- 15T .
+ 19T . . . . .
  18T
  11T
  13T .
- FD . .
+ 02T . .
  H1T
  15T
  Ü1T .
- 14T 151:45
+ 14T 151:00
+Rettenegger B. .
+ B2T
+ B2T
+ 13B .
+ R4B
+ FD . .
+ 06B
+ 04B
+ B2T
+ B3T X .
+ 12B .
+ FD
+ FD
+ B2T
+ 03B .
+ 07B
+ FD
+ T4T
+ B1T X X . . 198:30
+Gedruckt am 31.10.26
+von Benutzer 00100
+Seite
+5 von 11 atoss.com
+November
+Ist
+01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 Salzmann J. .
  11T XR
  03T . .
  11B . . .
  14T
- FD
+ 15T
  SAT . XR .
  06T
- 06B
+ 12T
  11T . . .
  11T XR .
- 03B
+ 12T
  H1T
  R3B .
- Ü1T 151:15
+ Ü1T 150:00
+Schreiner P. . .
+ R1B
+ B1T .
+ 03B . .
+ 03B
+ B2B .
+ R3B X
+ 08B .
+ 03B
+ FD
+ 04B
+ B2T .
+ FD . XR
+ B3T
+ 13B
+ T4T
+ B2T XR .
+ 15B 188:45
+Sitte M. .
+ 19B .
+ T6T
+ FD
+ 06B X XR .
+ 03B
+ B1T
+ FD . XR .
+ B2T
+ B1T
+ FD .
+ R2B
+ 04B .
+ B3T .
+ B1T
+ B2B
+ T3T
+ FD .
+ 06B 198:30
+Spatzenegger F. .
+ 13B
+ 18B
+ 19B .
+ 19B . .
+ 13B
+ B3T .
+ 19B .
+ FD .
+ 19B
+ R3B
+ 13B
+ T6T . . .
+ R3B
+ 19B
+ 12B .
+ 19B
+ FD . . 188:15
+Spitzelseder A. .
+ 03B
+ FD
+ FD .
+ 15B
+ FD . .
+ 13B .
+ 06B
+ B1T
+ FD .
+ B3T
+ T7T
+ B1T .
+ R4B . . .
+ 04B
+ 04B
+ 08T
+ 03B . .
+ B1T 197:00
 Stegner I. .
  14T
- 14T . . .
- 12T .
- 02T .
+ SKB . . .
+ 15T .
+ SKB .
  02T
- 02T
- 15T
+ FD .
  14T .
- SAT .
- FD
+ SAT
+ Ü1T
+ SKB
  14T .
  Ü1T .
- 02T .
+ SKB .
  12T
  16T
  16T
  14T .
- H1T 188:15
+ H1T 196:15
 Steindl F. . .
  06T
  05T
  07T
  19T . .
- 01T
+ Ü2T
  02T
  20T
  19T .
@@ -2070,8 +2517,24 @@ Steindl F. . .
  09T
  01T
  04T
- 18T . . . . 191:30
-Stockert T. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
+ 18T . . . . 192:30
+Stockert T. . . . .
+ 17T
+ 12T .
+ 01T .
+ FD .
+ 04T . .
+ 01T
+ 15T
+ 14T
+ 20T
+ 14T
+ FD .
+ 12T .
+ 20T .
+ 01T
+ 04T .
+ 03T 172:30
 Stranzinger M. .
  07T
  04T
@@ -2091,6 +2554,22 @@ Stranzinger M. .
  13T .
  02T
  09T XR . . 187:45
+Spöcklberger E. .
+ 06T
+ H1T .
+ 09T
+ 13T . .
+ FD .
+ 09T
+ Ü1T
+ 08T
+ 10T
+ Ü1T .
+ Ü2T .
+ 09T X . . . .
+ 11T
+ 13T X . .
+ FD 149:45
 Tischler M. .
  19T .
  20T
@@ -2098,27 +2577,27 @@ Tischler M. .
  01T .
  06T
  17T
- FD
- 15T X . .
- 13T .
  12T
+ R5B X . .
+ 13T .
+ R3B
  SAT
  13T . .
  06T
- FD
+ 11T
  03T
- 12T . XR .
- 06T 187:15
+ R4B . XR .
+ 06T 191:15
 Weiß F. .
  03T .
  11T
  16T
- 18T
- 15T .
+ 18T . .
  07T
  04T XR
  12T
- 18T . .
+ 18T
+ 02T .
  11T
  03T
  20T . X
@@ -2126,7 +2605,7 @@ Weiß F. .
  18T
  18T
  FD XR . .
- 18T 186:30
+ 18T 187:30
 Werner P. . .
  09T
  07T .
@@ -2134,14 +2613,34 @@ Werner P. . .
  02T . . .
  04T
  05T
- 04T . . X . .
+ 11T . . X . .
  07T
  SAT
  12T .
  17T XR
  07T XR
  19T . .
- 15T 149:30
+ 15T 149:00
+Wieder D. .
+ FD
+ R3B .
+ FD
+ 14B . .
+ T6T
+ T4T
+ 19B
+ B3T .
+ FD .
+ 08T
+ 15B
+ T5T .
+ 19B . .
+ 15B .
+ B3T
+ T5T
+ 13B
+ 10B .
+ 19B 197:30
 Zandanell J. . .
  05T
  06T
@@ -2152,127 +2651,20 @@ Zandanell J. . .
  09T
  16T
  01T .
- 01T
+ 20T
  07T .
  U
  U
  08T . .
  SAT
- 20T .
+ FD .
  11T
  09T .
- 07T 195:07
-ZD FSJ | ET07
-Edlinger V. .
- 01T
- 02T .
- 01T
- 02T X .
- 13T
- 14T .
- 07T
- 06T X . .
- T5T
- 01T
- 15T
- 14T X .
- 16T
- 14T
- FD .
- T5T
- U .
- T4T 184:26
-Köse Z. . .
- 13T .
- 15T .
- B1T . . .
- 13T
- 20T
- 14T . . . .
- 19T
- 20T
- 18T . . . .
- 15T .
- 12T
- B2T .
- 20T 141:15
-ZD FSJ | ET 08
-Orth M.
- B2T .
- A1T .
- 04T
- 03T X .
- A1T
- 07T
- 03T
- 14T XR XR .
- 16T
- 13T .
- FD
- A1T
- B2T . .
- 05T
- 05T .
- T6T
- 06T . . 185:00
-Pöttler D. .
- FD
- 01T X
- 03T
- 05T
- B2T .
- 19T .
- T1T
- 17T .
- 07T .
- 17T
- 17T XR
- 04T
- 05T
- B1T .
- 14T . XR .
- 04T
- 01T . . 187:00
-Janschütz K.
- B1T
- 20T .
- T2T
- A1T
- A1T
- 04T . .
- 20T
- 15T .
- 02T
- B1T . .
- 18T
- 18T .
- 19T . .
- 18T
- 15T . .
- 18T
- 08T . . 186:45
-Jungwirth L. . .
- 12T .
- T1T
- 16T . . .
- A1T .
- 18T
- 20T
- B2T .
- 19T .
- 06T
- 17T
- 15T
- 09T .
- 04T
- 03T
- FD
- 19T .
- B1T . . 186:00
+ 07T 195:52
 ET 10/2026
 Becher F. .
- B1T
- R2B .
+ B1T .
+ R2B
  04B .
  R3B .
  B1B
@@ -2283,15 +2675,15 @@ Becher F. .
  14B
  T7T
  12B . .
- B1B .
+ T5T .
  A
  A
  B1B
- 02B .
- B3T 189:00
+ 11T .
+ B3T 183:30
 Depauly M. .
  07B
- B1B
+ T1T
  14B .
  T3T . .
  B1T
@@ -2308,14 +2700,7 @@ Depauly M. .
  A
  15B
  15B .
- 11T 199:30
-Gedruckt am 14.10.26
-von Benutzer 01760
-Seite
-5 von 12 atoss.com
-November
-Ist
-01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+ 11T 198:30
 Dunkelmann L. .
  04B
  FD
@@ -2377,20 +2762,22 @@ Fleckl L. .
  B1T . .
  B2B 199:45
 Gatti S. .
- FD . .
+ FD
+ FD .
  B3T .
  13B .
  B3T
  T6T
  13B .
- T6T . . . . .
+ T6T . .
+ FD
+ FD .
  R4B
  B3T . .
  12B
  12B
  A
- A
- 11B . . . 142:15
+ A . . . . 164:30
 Gruber M. .
  T2T
  B2B .
@@ -2411,26 +2798,25 @@ Gruber M. .
  A
  FD . .
  T5T 200:15
-Halwax T. .
+Halwax T.
+ B1B
  T6T
  12B .
- FD
- B1B
- FD .
+ FD . . .
  04B
  R4B .
  FD
- B2T . .
- T6T .
+ B2T . . . .
  B2T
  B1T
- B2B . .
+ B2B
+ 08B .
  B1T
  11B
  A
  A
  01B . .
- T6T 199:30
+ T6T 189:30
 Haritopoulos M. .
  R1B
  FD .
@@ -2438,7 +2824,7 @@ Haritopoulos M. .
  ASF . .
  SEF
  06B
- B1B
+ T2T
  03B . .
  FD
  19B .
@@ -2449,7 +2835,7 @@ Haritopoulos M. .
  B2T
  A
  A . .
- B2T 194:15
+ B2T 193:15
 Hotter P. .
  B1B .
  04B
@@ -2460,16 +2846,16 @@ Hotter P. .
  11B
  T2T . .
  01B
- B2B
+ R2B
  T1T
  T3T .
  FD .
- 01B
+ R2B
  T7T
  11B
  A
  A
- 04B . . 197:45
+ 04B . . 200:45
 Huber J. . .
  06B
  T5T
@@ -2537,7 +2923,7 @@ Liening M. .
  FD
  01B . .
  T5T
- 18B
+ SU
  T7T
  T6T .
  15B .
@@ -2546,13 +2932,14 @@ Liening M. .
  B3T .
  T4T
  09B .
- FD
+ R1B
  T5T
  R1B
  A
  A . .
- 01B 199:30
-Pendl F. .
+ 01B 196:56
+Pendl F.
+ B2B
  R2B
  13B .
  03B
@@ -2561,17 +2948,16 @@ Pendl F. .
  T1T
  T3T .
  B1T
- B2B . . .
- R1B
+ B2B . .
+ T6T .
  T4T
  11B
- T6T
- 08B . .
+ T6T . . .
  01B
  07B
  A
  A . .
- FD 199:00
+ FD 197:00
 Pichler M. .
  B3T
  T4T
@@ -2594,7 +2980,7 @@ Pichler M. .
  A 196:00
 Schmid F. .
  T3T .
- R2B
+ R5B
  12B .
  R4B . .
  11B . .
@@ -2605,22 +2991,29 @@ Schmid F. .
  B1B
  T1T
  R3B .
- R1B
+ FD
  T1T
  T3T
- 04B
+ T3T
  A
  12B .
- A 199:30
+ A 197:15
+Gedruckt am 31.10.26
+von Benutzer 00100
+Seite
+6 von 11 atoss.com
+November
+Ist
+01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 Schneckenleit.F .
  12B
  T5T
  T1T
- FD
+ R3B
  13B . .
  R1B
  FD
- B2B .
+ T2T .
  13B
  ASF . .
  03B .
@@ -2631,12 +3024,12 @@ Schneckenleit.F .
  T2T
  A
  14B .
- A 199:45
-Schober S.
- B1B .
+ A 200:00
+Schober S. . .
  07B
  T7T
- T3T .
+ T3T
+ B1B
  14B .
  01B
  04B
@@ -2647,11 +3040,11 @@ Schober S.
  R2B
  T2T
  FD .
- 03B
- 07B .
+ 03B .
+ FD
  07B
  A . .
- A 199:45
+ A 200:00
 Seifter B. .
  FD
  B1T
@@ -2672,8 +3065,7 @@ Seifter B. .
  A
  06B .
  A 199:30
-Tisvani E.
- B2B .
+Tisvani E. . .
  FD
  03B
  B2B
@@ -2682,7 +3074,8 @@ Tisvani E.
  B2T
  04B
  T7T
- 10B . . .
+ 10B . .
+ R1B
  FD
  19B
  T3T . .
@@ -2691,7 +3084,7 @@ Tisvani E.
  14B
  A
  03B .
- A 199:15
+ A 200:15
 Tomas G. .
  T1T
  01B .
@@ -2713,215 +3106,26 @@ Tomas G. .
  ASF .
  A 200:15
 Yasikoff F. . .
- T1T
- B1B .
- 07B
- 07B .
- 14B .
- T2T
- T2T
- FD . .
- B2B
- R2B
- R3B .
- FD
- FD .
- T5T .
- 19B
- T3T
+ ID
  A
- 08B .
- A 200:30
+ A
+ A . .
+ A
+ A
+ A
+ A
+ A . .
+ A
+ A
+ A
+ A
+ A . .
+ A
+ A
+ A E
+ T1B . .
+ T1B 164:00
 ET 09/2026
-Aigner M. .
- B2F .
- B1F
- T7F
- T1F
- FD . X XR
- T3F
- B2F
- T1F . .
- T2F
- 08F
- 08F
- B3F .
- B2F .
- T2F
- B2F
- R2B
- B1F
- T2F . .
- T1F 198:30
-Brandauer G. .
- 06B
- T2T
- B2T
- R4B .
- FD . .
- T2T
- 08T
- 03B
- 04B X .
- FD
- B3T .
- B3T
- 08T XR . .
- 03B
- FD
- 06B
- 07B XR .
- FD 194:00
-Ehrenreich D. .
- T7T
- 04B
- FD
- B1B .
- 10B .
- T2T
- FD
- FD
- 08T .
- 06B .
- T5T
- 14B .
- 18B
- 15B . .
- T1T
- T6T .
- B2T
- T1T . .
- R2B 198:30
-Gasteiner M. . .
- T2F
- 08F
- T3F
- T3F . .
- 08F
- B3F
- B3F
- B3F
- R1B . .
- T3F
- B3F
- B3F .
- T2F
- FD .
- B3F .
- T3F
- T2F
- T1F X .
- B1F 198:30
-Gerke D. . .
- R4B
- 08T
- 13B . . . .
- FD .
- 13B
- 12B . .
- FD
- 12B . X .
- 13B .
- FD .
- 15B
- 19B
- 14B . .
- R3B 151:15
-Gruber J. .
- 08F
- B2F
- B2F
- T2F . . . X
- B2F
- 08F
- T3F
- T2F
- FD . XR
- T3F
- T3F
- T1F
- B3F
- FD .
- T3F
- R2B .
- T1F
- B2F . .
- T3F 199:45
-Haas K. .
- R4B
- T6T . .
- FD
- FD . .
- 08T
- T4T .
- T4T X .
- T4T .
- T6T . XR XR .
- 08T
- T4T
- T6T
- FD .
- 13B .
- 14B 149:30
-Hufnagl S. .
- FD
- 19B .
- B1T
- T7T . .
- 08T .
- FD
- R2B
- T5T
- 02B . X
- FD
- 01B
- T1T
- T7T
- 06B . .
- T2T
- T5T
- 01B
- T2T . .
- T2T 197:30
-Jäger K. .
- 08T
- 11B
- FD
- R3B .
- 12B . .
- FD
- 18B .
- FD . .
- FD
- 04B
- 08T .
- 01B
- 02B .
- B2B .
- 03B
- B1B
- 04B . .
- B1B 193:00
-Kramers N. . X
- B1F
- B3F
- B3F
- B3F . .
- T3F
- 08F .
- T2F
- T3F
- R3B .
- B3F
- T7F
- T7F
- T2F X X .
- B2F
- B1F .
- T3F
- B3F
- FD .
- T2F 199:30
 Lang A. .
  T3F .
  T2F
@@ -2933,30 +3137,24 @@ Lang A. .
  T2F
  R4B
  T4F . .
- T4F
+ FD
  T2F
- T4F .
+ T4F
+ T4F
  T7F . .
  T4F
  T3F
  T1F
  T7F .
  B2F .
- T4F 202:15
-Gedruckt am 14.10.26
-von Benutzer 01760
-Seite
-6 von 12 atoss.com
-November
-Ist
-01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+ T4F 213:15
 Lesiw M. .
  B1F XR XR
  B1F
- B2F . .
- B1F
+ B2F . . .
  T3F
- B1F .
+ B1F
+ T5F
  B2F . . X
  B2F
  B2F
@@ -2967,94 +3165,26 @@ Lesiw M. .
  B3F
  B3F
  B3F . . .
- R4B 189:30
-Niedermoser N. .
- FD
- 03B
- 15B .
- FD . . .
- 07B
- FD .
- 01B
- 03B .
- 13B
- FD .
- 04B
- R1B . .
- T3T
- 08T
- B2B X
- 06B
- 05B .
- 04B 196:00
-Powolny L. . X XR
- R3B .
- T5T
- FD . .
- T7T
- 15B . . XR .
- 15B .
- FD
- T4T
- T5T
- 10B .
- T4T
- 14B .
- B3T . . .
- T7T 142:30
-Prantner V. .
- 14B
- FD .
- T4T
- 08T XR .
- 19B .
- 12B XR
- 14B X .
- R3B
- FD . .
- FD . .
- 18B .
- 14B .
- B3T . .
- 18B 151:15
+ R4B 187:30
 Prenninger J. .
  01B
- 08T
  FD
- 08T
+ FD
+ T4T
  T1T X .
  B2B .
  T6T
  T1T .
  FD .
  T1T
- 08T
+ FD
  T2T .
- R3B
- 15B . X
- T3T
- T7T
- 15B
- T7T . . X 182:00
-Rettenegger B. .
- B2T
- B2T
- 13B .
- R4B
- FD . .
- 06B
- 04B
- B2T
- B3T X .
- 12B .
  FD
- FD
- B2T
- 03B .
- 07B
- FD
+ 15B .
  T4T
- B1T X X . . 198:30
+ T3T .
+ 15B
+ T7T . . X 186:15
 Schiefer L. .
  18B .
  B3T
@@ -3074,120 +3204,6 @@ Schiefer L. .
  18B .
  FD .
  FD 193:00
-Schreiner P. . .
- R1B
- B1T .
- 03B . .
- 03B
- B2B .
- R3B X
- 08B .
- 03B
- FD
- 04B
- B2T .
- FD . XR
- B3T
- 13B
- T4T
- B2T XR .
- 15B 188:45
-Sitte M. .
- 19B .
- T6T
- R2B
- 06B X XR .
- 03B
- B1T
- FD . XR .
- B2T
- B1T
- FD .
- R2B
- 04B .
- B3T .
- B1T
- B2B
- T3T
- FD .
- 06B 199:45
-Spatzenegger F. .
- 13B
- 18B
- 19B .
- 19B . .
- 13B
- B3T .
- 19B .
- FD .
- 19B
- R3B
- 13B
- T6T . . .
- R3B
- 19B
- 12B .
- 19B
- FD . . 188:15
-Spitzelseder A. .
- 03B
- FD
- FD .
- 15B
- FD . .
- 13B .
- 06B
- B1T
- FD .
- B3T
- T7T
- B1T .
- R4B . . .
- 04B
- 04B
- 08T
- 03B . .
- B1T 197:00
-Unterrainer C. .
- B3F
- B3F .
- 08F
- T2F X .
- B2F
- B1F
- R1B
- 08F
- B3F X .
- 08F .
- T2F
- T3F
- T3F
- FD .
- T1F .
- B2F
- T4F
- T3F X .
- B3F 197:30
-Wieder D. .
- FD
- R3B .
- FD
- 14B . .
- T6T
- T4T
- 19B
- B3T .
- FD .
- 08T
- 15B
- T5T .
- 19B . .
- 15B .
- B3T
- T5T
- 13B
- 10B .
- 19B 197:30
 ZD FSJ ohne RS
 Fürk T.
  B2F
@@ -3202,10 +3218,10 @@ Fürk T.
  T7F
  T6F .
  T6F
- T4F . .
- T6F
+ T4F . . .
  T2F
- T2F .
+ T2F
+ T6F
  T4F . .
  T5F 175:30
 Lettner F. . X XR XR
@@ -3221,14 +3237,14 @@ Lettner F. . X XR XR
  B1F
  B1F
  FD . .
- FD
+ T4F
  B1F
  B2F
  B1F . .
- B2F 190:00
+ B2F 188:45
 Krabath G. .
  T2F
- 08F
+ B3F
  T3F .
  T4F . .
  T7F .
@@ -3243,7 +3259,7 @@ Krabath G. .
  T7F
  T6T
  T4T . .
- T7F 166:45
+ T7F 168:45
 Kroißl M. .
  R3B
  B3T .
@@ -3265,19 +3281,19 @@ Kroißl M. .
  12B 199:15
 Prantner M.
  B1F
- T4F
- T4F .
+ T4F . . .
+ T5F
+ FD .
+ B1F . . .
  T6F
- T5F . . .
+ FD .
+ T4F . . .
  T5F
- T5F
- T5F . . . .
- T4F .
- T4F
- T5F . . .
- T4F
- T4F
- T6F . . . . 134:30
+ FD .
+ T6F . . .
+ FD
+ FD .
+ FD 145:00
 Polizei | ÖBH
 Aspacher ÖBH F. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Berger C. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
@@ -3316,17 +3332,17 @@ Braunstein B. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Bürger A. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Eichinger J. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Feik M. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
-Gedruckt am 14.10.26
-von Benutzer 01760
-Seite
-7 von 12 atoss.com
-November
-Ist
-01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 Gunz P. . . . . . . . . . .
  R2B
  R1B . . . . . . . . . . . . . . . . . . 24:30
 Hanke M. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
+Gedruckt am 31.10.26
+von Benutzer 00100
+Seite
+7 von 11 atoss.com
+November
+Ist
+01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 Hotter H. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Lacher D. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Maderegger A. . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -3340,8 +3356,7 @@ Plötzeneder P. . . . . . . . .
 Schwertl W. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Schneebauer V. . .
  R3T . . . . . . . .
- R5T . . . . . . . .
- Ü2B . . . . . . . . . 34:45
+ R5T . . . . . . . . . . . . . . . . . . 24:30
 Seer R. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Steidl M. . . . . . . . . . .
  R2T
@@ -3359,13 +3374,16 @@ Weger R. . . .
  05F . . . . . . . 34:45
 Ziegeleder H. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Gäste
-Gast 01  . . . .
+Gast 01  . .
+ R5B .
  R2F
  04F .
- R2B . .
+ R2B .
+ R5B
  Ü2T . .
  R3B . . .
- R3F . . . . . . . . . . . . . 70:30
+ R3F . . . . . . . .
+ R3B . . . . 107:15
 Gast 02  . . . . . . . . . . . . . . . . .
  20F . . . . . . . . . . . . . 11:15
 Gast 03  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
@@ -3390,7 +3408,7 @@ LStA
  
 ND1
  
-ND1
+NdN
  
 NdN
  
@@ -3415,21 +3433,20 @@ ND2 . .
 NCN . . . X 166:15
 Fairweather A.
  NCN
- NCN . . .
+ NCN . .
+ C1
  C2
  C2
  C1
- NCN . .
- C3 . . .
+ NCN . . . . . .
  06F . .
  C10
  C3 .
  C2
  C3
  16F
- C3 .
- NCN
- NCN . . 171:00
+ C3 . .
+ NCN . . 159:00
 Ferlan G.
  U
  SLN
@@ -3444,26 +3461,18 @@ Ferlan G.
  SLN
  ND1
  NdN . . .
- R2F .
- C2 X
+ R2F . . X
  SLN
  C10 X
- SLN 183:30
-Gedruckt am 14.10.26
-von Benutzer 01760
-Seite
-8 von 12 atoss.com
-November
-Ist
-01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+ SLN 172:30
 Hangler D.
- NdN . .
+ NdN
+ NdN .
  ND2
  ND2 X X X
  ND2
  ND2 .
- ND1
- NCN . .
+ ND1 . . .
  ND1
  NdN . .
  C1
@@ -3472,29 +3481,34 @@ Hangler D.
  NdN . .
  06F
  C1
- NdN
- NCN . 177:15
+ NdN . . 165:15
 Krainer H.
- U
- NdN . .
+ U . . .
  ND1
  ND1 X
  C10 .
  ND1
  ND1
- 05F .
+ 05F
+ NCN
  NdN . .
  R4F
  ND2
- NCN
- ND2 X X
+ NCN . X X
  ND1
  ND1
  NdN .
  U
  U
  U
- NCN 191:36
+ NCN 183:36
+Gedruckt am 31.10.26
+von Benutzer 00100
+Seite
+8 von 11 atoss.com
+November
+Ist
+01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
 Lindner M. . . .
  
 DF
@@ -3531,26 +3545,46 @@ C1
  
 U 181:33
 Schilcher A.
- U
- U
- NdN . X
- C10
- AX
- NdN .
- B X
- B
- B X .
- B .
- B
- ND2 .
- NdN .
- B
- B
- B .
- R3T
- ND1
- C1
- C1 170:48
+ 
+U
+ 
+U
+ 
+NdN . X
+ 
+LStA
+ 
+AX
+ 
+ND1 .
+ 
+B X
+ 
+B
+ 
+B X .
+ 
+B .
+ 
+B
+ 
+ND2 .
+ 
+NdN .
+ 
+B
+ 
+B
+ 
+B .
+ 
+R3T
+ 
+ND1
+ 
+C1
+ 
+C1 172:48
 Stefanelli S. .
  
 LStA
@@ -3575,9 +3609,7 @@ NCN .
  
 SLN
  
-SLN .
- 
-C10
+SLN . .
  
 SLN .
  
@@ -3597,7 +3629,7 @@ U
  
 U
  
-U 141:05
+U 135:05
 Umgeher M.
  
 C10
@@ -3641,7 +3673,9 @@ ND1
  
 SLN .
  
-LStA . .
+LStA
+ 
+A .
  
 ND1
  
@@ -3675,7 +3709,7 @@ SLN
  
 SLN
  
-ND1 177:15
+ND1 185:15
 PMU
 Berger K. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Dreher S. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
@@ -3706,15 +3740,15 @@ Hasenbichler .P . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Haidenberger F. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Harvranek L. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Herbst L. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
-Gedruckt am 14.10.26
-von Benutzer 01760
+Hödlmoser T. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
+Huber J. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
+Gedruckt am 31.10.26
+von Benutzer 00100
 Seite
-9 von 12 atoss.com
+9 von 11 atoss.com
 November
 Ist
 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
-Hödlmoser T. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
-Huber J. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Klaus S. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Knoglinger P. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Luck S. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
@@ -3752,15 +3786,15 @@ Rosivatz J. . . . . . . . . . . . . .
 Rubner J. . . . . . . . . . . . . .
  R2F . . . . . . . . . . . . . . . . 11:15
 Sabbadini Y. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
-Gedruckt am 14.10.26
-von Benutzer 01760
+Saccani J. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
+Schlager R. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
+Gedruckt am 31.10.26
+von Benutzer 00100
 Seite
-10 von 12 atoss.com
+10 von 11 atoss.com
 November
 Ist
 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
-Saccani J. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
-Schlager R. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Schaubmair T. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Seer S. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 0:00
 Shatilova M. . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -3800,20 +3834,16 @@ Dienstabkürzungen und Fehlgründe
 20B Tour 20 - B - 07:00-19:00 20F Tour 20 - Fahrer - 07:00-19:00 20T Tour 20 - T - 07:00-19:00 A LSt Ausbildung 8h A/ Ausbildung - 4h A1F Tour A1 - Fahrer - 06:00-18:00 A1T Tour A1 - TF - 06:00-18:00 AR ZD Abrüster
 ASF Ausgabe 05:45-18:00 AX Ausbildung - Stundenfrei B LSt Büro / 07:30-16:30 B1B Tour B1 - BF - 06:00-18:00 B1F Tour B1 - Fahrer - 06:00-18:00 B1T Tour B1 - TF - 06:00-18:00 B2B Tour B2 - BF - 06:30-18:30 B2F Tour B2 - Fahrer - 06:30-18:30
 B2T Tour B2 - TF - 06:30-18:30 B3F Tour B3 - Fahrer - 08:00-19:30 B3T Tour B3 - TF - 08:00-19:30 C1 LSt C1 - 07:00-17:00 C10 LSt C10 - 16:00-22:00 C2 LSt C2 - 08:00-19:00 C3 LSt C3 - 09:00-19:00 DA Dienstführer RKT - 06:00-19:30
-DF Dienstführer RKT - 06:00-19:30 DP Dienstplanung - 08:00 - 16:00h E ZD Einschulung FD Fahrdienst  (Reserve) GM Garagenmeister 06:00-16:00 GMT Garagenmeister ZD H1F Dst Hof Fahrer 2 H1T Dst Hof Transportführer 2
-HOF Dst Hof Fahrer HOT Dst Hof Transportführer ID Innendienst - 07:00-16:00 L Lagertätigkeit - 07:00-16:30 LStA LSt Ausbildung 8h LStV LSt Vortrag NCN LStN CN - 19:00-07:00 ND1 LStN ND1 - 07:00-19:00
-ND2 LStN ND2 - 07:00-15:00 NEN NEF Nacht (19:00-07:00) NET NEF Tag (07:00-19:00) NdN LStN DN - 19:00-07:00 P1F Tour P1 - Fahrer - 07:00-16:00 R1B RTW 1 - BF - 6:00-18:00 R1F RTW 1 - Fahrer - 6:00-18:00 R1T RTW 1 - TF - 6:00-18:00
-R2B RTW 2 - BF - 6:00-18:00 R2F RTW 2 - Fahrer - 6:00-18:00 R2T RTW 2 - TF - 6:00-18:00 R3B RTW 3 - BF - 7:30-19:30 R3F RTW 3 - Fahrer - 7:30-19:30 R3T RTW 3 - TF - 7:30-19:30 R4B RTW 4 - BF - 7:30-19:30 R4F RTW 4 - Fahrer - 7:30-19:30
-R4T RTW 4 - TF - 7:30-19:30 R5B RTW 5 - BF - 6:30-18:30 R5F RTW 5 - Fahrer - 6:30-18:30 R5T RTW 5 - TF - 6:30-18:30 SAF Tour SK 2 - F - 06:45-19:00 SAT Tour SK 2- TF - 06:45-19:00 SD Sonderdienst - 07:00-16:00h SEF SEF Ausbildung - 8h
-SKF Tour SK - F - 06:30-18:30 SKT Tour SK - TF - 06:30-18:30 SLN LStN SLN - 07:00-19:00 T1F Tour T1 - Fahrer - 06:30-17:30 T1T Tour T1 - TF - 06:30-17:30 T2F Tour T2 - Fahrer - 06:30-17:30 T2T Tour T2 - TF - 06:30-17:30 T3F Tour T3 - Fahrer - 06:30-17:30
-T3T Tour T3 - TF - 06:30-17:30 T4F Tour T4 - Fahrer - 07:00-17:30 T4T Tour T4 - TF - 07:00-17:30 T5F Tour T5 - Fahrer - 07:30-17:30 T5T Tour T5 - TF - 07:30-17:30 T6F Tour T6 - Fahrer - 07:30-17:30 T6T Tour T6 - TF - 07:30-17:30 T7F Tour T7 - Fahrer - 07:30-18:00
-T7T Tour T7 - TF - 07:30-18:00 U Urlaub X Wunschfrei XR Freier Tag f. RK uA null Ü1F Tour Ü1 - Fahrer - 07:00-19:00 Ü1T Tour Ü1 - TF - 07:00-19:00 Ü2B Tour Ü2 - BF - 07:00-19:00
-Gedruckt am 14.10.26
-von Benutzer 01760
+DF Dienstführer RKT - 06:00-19:30 DP Dienstplanung - 08:00 - 16:00h E ZD Einschulung EXT Fahrdienst  Extern FD Fahrdienst  (Reserve) GM Garagenmeister 06:00-16:00 GMT Garagenmeister ZD H1F Dst Hof Fahrer 2
+H1T Dst Hof Transportführer 2 HOF Dst Hof Fahrer HOT Dst Hof Transportführer ID Innendienst - 07:00-16:00 K1 Krank bis 3 Tage L Lagertätigkeit - 07:00-16:30 LStA LSt Ausbildung 8h LStV LSt Vortrag
+NCN LStN CN - 19:00-07:00 ND1 LStN ND1 - 07:00-19:00 ND2 LStN ND2 - 07:00-15:00 NEN NEF Nacht (19:00-07:00) NET NEF Tag (07:00-19:00) NdN LStN DN - 19:00-07:00 P1F Tour P1 - Fahrer - 07:00-16:00 R1B RTW 1 - BF - 6:00-18:00
+R1F RTW 1 - Fahrer - 6:00-18:00 R1T RTW 1 - TF - 6:00-18:00 R2B RTW 2 - BF - 6:00-18:00 R2F RTW 2 - Fahrer - 6:00-18:00 R2T RTW 2 - TF - 6:00-18:00 R3B RTW 3 - BF - 7:30-19:30 R3F RTW 3 - Fahrer - 7:30-19:30 R3T RTW 3 - TF - 7:30-19:30
+R4B RTW 4 - BF - 7:30-19:30 R4F RTW 4 - Fahrer - 7:30-19:30 R4T RTW 4 - TF - 7:30-19:30 R5B RTW 5 - BF - 6:30-18:30 R5F RTW 5 - Fahrer - 6:30-18:30 R5T RTW 5 - TF - 6:30-18:30 SAF Tour SK 2 - F - 06:45-19:00 SAT Tour SK 2- TF - 06:45-19:00
+SD Sonderdienst - 07:00-16:00h SEF SEF Ausbildung - 8h SKB Tour SK - BF - 06:30-18:30 SKF Tour SK - F - 06:30-18:30 SKT Tour SK - TF - 06:30-18:30 SLN LStN SLN - 07:00-19:00 SU Sonderurlaub T1B Tour T1 - BF - 06:30-17:30
+T1F Tour T1 - Fahrer - 06:30-17:30 T1T Tour T1 - TF - 06:30-17:30 T2F Tour T2 - Fahrer - 06:30-17:30 T2T Tour T2 - TF - 06:30-17:30 T3F Tour T3 - Fahrer - 06:30-17:30 T3T Tour T3 - TF - 06:30-17:30 T4F Tour T4 - Fahrer - 07:00-17:30 T4T Tour T4 - TF - 07:00-17:30
+T5F Tour T5 - Fahrer - 07:30-17:30 T5T Tour T5 - TF - 07:30-17:30 T6F Tour T6 - Fahrer - 07:30-17:30 T6T Tour T6 - TF - 07:30-17:30 T7F Tour T7 - Fahrer - 07:30-18:00 T7T Tour T7 - TF - 07:30-18:00 U Urlaub X Wunschfrei
+XR Freier Tag f. RK uA null Ü1F Tour Ü1 - Fahrer - 07:00-19:00 Ü1T Tour Ü1 - TF - 07:00-19:00 Ü2F Tour Ü2 - Fahrer - 07:00-19:00 Ü2T Tour Ü2 - TF - 07:00-19:00 Ü3F Tour Ü3 - Fahrer - 07:00-19:00 Ü3T Tour Ü3 - TF - 07:00-19:00
+Gedruckt am 31.10.26
+von Benutzer 00100
 Seite
-11 von 12 atoss.com
-Ü2F Tour Ü2 - Fahrer - 07:00-19:00 Ü2T Tour Ü2 - TF - 07:00-19:00
-Gedruckt am 14.10.26
-von Benutzer 01760
-Seite
-12 von 12 atoss.com
+11 von 11 atoss.com
