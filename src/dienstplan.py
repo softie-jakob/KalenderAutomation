@@ -59,6 +59,14 @@ class Plan:
     warnings: tuple[str, ...]
 
 
+KNOWN_DEFINITIONS = {
+    "U": ShiftDefinition("U", "Urlaub"),
+    "X": ShiftDefinition("X", "Wunschfrei"),
+    "XR": ShiftDefinition("XR", "Wunschfrei"),
+    "FD": ShiftDefinition("FD", "Fahrdienstreserve", FD_START, FD_END),
+}
+
+
 def _filename_plan_key(path: Path) -> Optional[tuple[int, int, int]]:
     match = re.fullmatch(r"(\d{2})(\d{2})\s+V(\d+)", path.stem, re.IGNORECASE)
     if not match:
@@ -106,10 +114,7 @@ def parse_legend(lines: Iterable[str]) -> dict[str, ShiftDefinition]:
         ):
             code, description = match.groups()
             definitions[code] = _parse_definition(code, description)
-    if "FD" in definitions:
-        definitions["FD"] = ShiftDefinition(
-            "FD", definitions["FD"].description, FD_START, FD_END
-        )
+    definitions.update(KNOWN_DEFINITIONS)
     return definitions
 
 

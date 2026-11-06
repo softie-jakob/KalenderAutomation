@@ -34,6 +34,19 @@ class DienstplanTests(unittest.TestCase):
         self.assertEqual(definition.end.hour, 18)
         self.assertEqual(definition.end.minute, 0)
 
+    def test_known_codes_are_recognized_in_pdf_legend_layout(self) -> None:
+        legend = parse_legend([
+            "06B Tour 6 - BF - 06:00-18:00",
+            "FD Fahrdienst (Reserve) GM Garagenmeister 06:00-16:00",
+            "U Urlaub X Wunschfrei",
+        ])
+
+        self.assertEqual(legend["U"].description, "Urlaub")
+        self.assertEqual(legend["X"].description, "Wunschfrei")
+        self.assertEqual(legend["XR"].description, "Wunschfrei")
+        self.assertEqual(legend["FD"].start.hour, 7)
+        self.assertEqual(legend["FD"].end.hour, 18)
+
     def test_parse_and_stable_uid(self) -> None:
         from pathlib import Path
         import tempfile
@@ -70,7 +83,7 @@ class DienstplanTests(unittest.TestCase):
         self.assertEqual(len(plan.shifts), 3)
         self.assertIn("SUMMARY:U - Urlaub", ics)
         self.assertIn("SUMMARY:X - Wunschfrei", ics)
-        self.assertIn("SUMMARY:XR - Wunschfrei (Reserve)", ics)
+        self.assertIn("SUMMARY:XR - Wunschfrei", ics)
         self.assertIn("DTSTART;VALUE=DATE:20261001", ics)
         self.assertIn("DTSTART;VALUE=DATE:20261002", ics)
         self.assertIn("DTSTART;VALUE=DATE:20261003", ics)

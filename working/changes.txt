@@ -1,10 +1,56 @@
-Neue Termine: 2
-Geänderte Termine: 0
-Entfernte Termine: 1
-Unveränderte Termine: 37
+Neue Termine: 0
+Geänderte Termine: 4
+Entfernte Termine: 0
+Unveränderte Termine: 35
 
-NEU: gruber-j-20261109@kalender-automation.local
+GEÄNDERT: gruber-j-20261109@kalender-automation.local
+--- alt
++++ neu
+@@ -1,5 +1,5 @@
+ UID:gruber-j-20261109@kalender-automation.local
+ DTSTART;VALUE=DATE:20261109
+ DTEND;VALUE=DATE:20261110
+-SUMMARY:X - Unbekanntes Dienstkürzel
+-DESCRIPTION:Person: Gruber J.\; Dienstkürzel: X\; Dienst: Unbekanntes Dienstkürzel\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
++SUMMARY:X - Wunschfrei
++DESCRIPTION:Person: Gruber J.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
 
-NEU: gruber-j-20261116@kalender-automation.local
+GEÄNDERT: gruber-j-20261114@kalender-automation.local
+--- alt
++++ neu
+@@ -1,5 +1,5 @@
+ UID:gruber-j-20261114@kalender-automation.local
+-DTSTART;VALUE=DATE:20261114
+-DTEND;VALUE=DATE:20261115
+-SUMMARY:FD - Unbekanntes Dienstkürzel
+-DESCRIPTION:Person: Gruber J.\; Dienstkürzel: FD\; Dienst: Unbekanntes Dienstkürzel\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
++DTSTART;TZID=Europe/Vienna:20261114T070000
++DTEND;TZID=Europe/Vienna:20261114T180000
++SUMMARY:FD - Fahrdienstreserve
++DESCRIPTION:Person: Gruber J.\; Dienstkürzel: FD\; Dienst: Fahrdienstreserve\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren erkannt
 
-ENTFERNT: gruber-j-20261023@kalender-automation.local
+GEÄNDERT: gruber-j-20261116@kalender-automation.local
+--- alt
++++ neu
+@@ -1,5 +1,5 @@
+ UID:gruber-j-20261116@kalender-automation.local
+ DTSTART;VALUE=DATE:20261116
+ DTEND;VALUE=DATE:20261117
+-SUMMARY:XR - Freier Tag f. RK uA null Ü1F Tour Ü1 - Fahrer - 07:00-19:00
+-DESCRIPTION:Person: Gruber J.\; Dienstkürzel: XR\; Dienst: Freier Tag f. RK uA null Ü1F Tour Ü1 - Fahrer - 07:00-19:00\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
++SUMMARY:XR - Wunschfrei
++DESCRIPTION:Person: Gruber J.\; Dienstkürzel: XR\; Dienst: Wunschfrei\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+
+GEÄNDERT: gruber-j-20261121@kalender-automation.local
+--- alt
++++ neu
+@@ -1,5 +1,5 @@
+ UID:gruber-j-20261121@kalender-automation.local
+-DTSTART;VALUE=DATE:20261121
+-DTEND;VALUE=DATE:20261122
+-SUMMARY:FD - Unbekanntes Dienstkürzel
+-DESCRIPTION:Person: Gruber J.\; Dienstkürzel: FD\; Dienst: Unbekanntes Dienstkürzel\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
++DTSTART;TZID=Europe/Vienna:20261121T070000
++DTEND;TZID=Europe/Vienna:20261121T180000
++SUMMARY:FD - Fahrdienstreserve
++DESCRIPTION:Person: Gruber J.\; Dienstkürzel: FD\; Dienst: Fahrdienstreserve\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren erkannt

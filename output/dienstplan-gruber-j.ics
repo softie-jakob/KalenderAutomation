@@ -22,7 +22,7 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:gruber-j-20261002@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261002T063000
 DTEND;TZID=Europe/Vienna:20261002T180000
 SUMMARY:07B - Tour 7 - BF - 06:30-18:00
@@ -32,7 +32,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: 07B\; Dienst: Tour 7 - BF -
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261005@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261005T060000
 DTEND;TZID=Europe/Vienna:20261005T180000
 SUMMARY:B1B - Tour B1 - BF - 06:00-18:00
@@ -42,7 +42,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1B\; Dienst: Tour B1 - BF -
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261006@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
 SUMMARY:SEF - SEF Ausbildung - 8h
@@ -52,7 +52,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: SEF\; Dienst: SEF Ausbildung
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261007@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261007T060000
 DTEND;TZID=Europe/Vienna:20261007T180000
 SUMMARY:B1T - Tour B1 - TF - 06:00-18:00
@@ -62,7 +62,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1T\; Dienst: Tour B1 - TF -
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261008@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261008T080000
 DTEND;TZID=Europe/Vienna:20261008T193000
 SUMMARY:15B - Tour 15 - BF - 08:00-19:30
@@ -72,7 +72,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: 15B\; Dienst: Tour 15 - BF -
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261009@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261009T080000
 DTEND;TZID=Europe/Vienna:20261009T193000
 SUMMARY:15B - Tour 15 - BF - 08:00-19:30
@@ -82,7 +82,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: 15B\; Dienst: Tour 15 - BF -
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261010@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261010T060000
 DTEND;TZID=Europe/Vienna:20261010T180000
 SUMMARY:B1T - Tour B1 - TF - 06:00-18:00
@@ -92,7 +92,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1T\; Dienst: Tour B1 - TF -
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261012@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261012T073000
 DTEND;TZID=Europe/Vienna:20261012T173000
 SUMMARY:T5F - Tour T5 - Fahrer - 07:30-17:30
@@ -102,7 +102,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T5F\; Dienst: Tour T5 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261013@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261013T060000
 DTEND;TZID=Europe/Vienna:20261013T180000
 SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
@@ -113,7 +113,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261015@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261015T070000
 DTEND;TZID=Europe/Vienna:20261015T173000
 SUMMARY:T4F - Tour T4 - Fahrer - 07:00-17:30
@@ -123,7 +123,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T4F\; Dienst: Tour T4 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261016@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261016T063000
 DTEND;TZID=Europe/Vienna:20261016T173000
 SUMMARY:T1F - Tour T1 - Fahrer - 06:30-17:30
@@ -133,7 +133,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T1F\; Dienst: Tour T1 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261017@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261017T073000
 DTEND;TZID=Europe/Vienna:20261017T193000
 SUMMARY:R3B - RTW 3 - BF - 7:30-19:30
@@ -143,7 +143,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: R3B\; Dienst: RTW 3 - BF - 7
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261021@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261021T060000
 DTEND;TZID=Europe/Vienna:20261021T180000
 SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
@@ -153,7 +153,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261022@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261022T070000
 DTEND;TZID=Europe/Vienna:20261022T173000
 SUMMARY:T4F - Tour T4 - Fahrer - 07:00-17:30
@@ -163,7 +163,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T4F\; Dienst: Tour T4 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261027@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:A - LSt Ausbildung 8h
@@ -173,7 +173,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 8
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261028@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261028T073000
 DTEND;TZID=Europe/Vienna:20261028T193000
 SUMMARY:R4B - RTW 4 - BF - 7:30-19:30
@@ -183,7 +183,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: R4B\; Dienst: RTW 4 - BF - 7
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261029@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:A - LSt Ausbildung 8h
@@ -193,7 +193,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 8
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261030@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261030T063000
 DTEND;TZID=Europe/Vienna:20261030T183000
 SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
@@ -203,7 +203,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261102@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261102T103000
 DTEND;TZID=Europe/Vienna:20261102T193000
 SUMMARY:08F - Tour 8 - Fahrer - 10:30 -19:30
@@ -213,7 +213,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: 08F\; Dienst: Tour 8 - Fahre
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261103@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261103T063000
 DTEND;TZID=Europe/Vienna:20261103T183000
 SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
@@ -224,7 +224,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261104@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261104T063000
 DTEND;TZID=Europe/Vienna:20261104T183000
 SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
@@ -235,7 +235,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261105@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261105T063000
 DTEND;TZID=Europe/Vienna:20261105T173000
 SUMMARY:T2F - Tour T2 - Fahrer - 06:30-17:30
@@ -245,17 +245,17 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T2F\; Dienst: Tour T2 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261109@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;VALUE=DATE:20261109
 DTEND;VALUE=DATE:20261110
-SUMMARY:X - Unbekanntes Dienstkürzel
-DESCRIPTION:Person: Gruber J.\; Dienstkürzel: X\; Dienst: Unbekanntes Dien
- stkürzel\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: ke
- ine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+SUMMARY:X - Wunschfrei
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Que
+ lle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren er
+ kannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261110@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261110T063000
 DTEND;TZID=Europe/Vienna:20261110T183000
 SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
@@ -265,7 +265,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261111@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261111T103000
 DTEND;TZID=Europe/Vienna:20261111T193000
 SUMMARY:08F - Tour 8 - Fahrer - 10:30 -19:30
@@ -275,7 +275,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: 08F\; Dienst: Tour 8 - Fahre
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261112@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261112T063000
 DTEND;TZID=Europe/Vienna:20261112T173000
 SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30
@@ -285,7 +285,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T3F\; Dienst: Tour T3 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261113@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261113T063000
 DTEND;TZID=Europe/Vienna:20261113T173000
 SUMMARY:T2F - Tour T2 - Fahrer - 06:30-17:30
@@ -295,28 +295,27 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T2F\; Dienst: Tour T2 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261114@kalender-automation.local
-DTSTAMP:20261106T090928Z
-DTSTART;VALUE=DATE:20261114
-DTEND;VALUE=DATE:20261115
-SUMMARY:FD - Unbekanntes Dienstkürzel
-DESCRIPTION:Person: Gruber J.\; Dienstkürzel: FD\; Dienst: Unbekanntes Die
- nstkürzel\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: k
- eine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+DTSTAMP:20261106T091224Z
+DTSTART;TZID=Europe/Vienna:20261114T070000
+DTEND;TZID=Europe/Vienna:20261114T180000
+SUMMARY:FD - Fahrdienstreserve
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: FD\; Dienst: Fahrdienstreser
+ ve\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine wei
+ teren erkannt
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261116@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;VALUE=DATE:20261116
 DTEND;VALUE=DATE:20261117
-SUMMARY:XR - Freier Tag f. RK uA null Ü1F Tour Ü1 - Fahrer - 07:00-19:00
-DESCRIPTION:Person: Gruber J.\; Dienstkürzel: XR\; Dienst: Freier Tag f. R
- K uA null Ü1F Tour Ü1 - Fahrer - 07:00-19:00\; Quelle: 2611 V2.pdf\; Plan
- version: 2\; Besatzungsmitglieder: keine weiteren erkannt\; Dauer: 8 Stunde
- n\; Beginn laut Plan unbekannt
+SUMMARY:XR - Wunschfrei
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: XR\; Dienst: Wunschfrei\; Qu
+ elle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine weiteren e
+ rkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261117@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261117T063000
 DTEND;TZID=Europe/Vienna:20261117T173000
 SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30
@@ -326,7 +325,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T3F\; Dienst: Tour T3 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261118@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261118T063000
 DTEND;TZID=Europe/Vienna:20261118T173000
 SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30
@@ -336,7 +335,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T3F\; Dienst: Tour T3 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261119@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261119T063000
 DTEND;TZID=Europe/Vienna:20261119T173000
 SUMMARY:T1F - Tour T1 - Fahrer - 06:30-17:30
@@ -346,7 +345,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T1F\; Dienst: Tour T1 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261120@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261120T080000
 DTEND;TZID=Europe/Vienna:20261120T193000
 SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
@@ -356,17 +355,17 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261121@kalender-automation.local
-DTSTAMP:20261106T090928Z
-DTSTART;VALUE=DATE:20261121
-DTEND;VALUE=DATE:20261122
-SUMMARY:FD - Unbekanntes Dienstkürzel
-DESCRIPTION:Person: Gruber J.\; Dienstkürzel: FD\; Dienst: Unbekanntes Die
- nstkürzel\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: k
- eine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+DTSTAMP:20261106T091224Z
+DTSTART;TZID=Europe/Vienna:20261121T070000
+DTEND;TZID=Europe/Vienna:20261121T180000
+SUMMARY:FD - Fahrdienstreserve
+DESCRIPTION:Person: Gruber J.\; Dienstkürzel: FD\; Dienst: Fahrdienstreser
+ ve\; Quelle: 2611 V2.pdf\; Planversion: 2\; Besatzungsmitglieder: keine wei
+ teren erkannt
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261123@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261123T063000
 DTEND;TZID=Europe/Vienna:20261123T173000
 SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30
@@ -376,7 +375,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T3F\; Dienst: Tour T3 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261124@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261124T060000
 DTEND;TZID=Europe/Vienna:20261124T180000
 SUMMARY:R2B - RTW 2 - BF - 6:00-18:00
@@ -386,7 +385,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: R2B\; Dienst: RTW 2 - BF - 6
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261126@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261126T063000
 DTEND;TZID=Europe/Vienna:20261126T173000
 SUMMARY:T1F - Tour T1 - Fahrer - 06:30-17:30
@@ -396,7 +395,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: T1F\; Dienst: Tour T1 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261127@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261127T063000
 DTEND;TZID=Europe/Vienna:20261127T183000
 SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
@@ -406,7 +405,7 @@ DESCRIPTION:Person: Gruber J.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahr
 END:VEVENT
 BEGIN:VEVENT
 UID:gruber-j-20261130@kalender-automation.local
-DTSTAMP:20261106T090928Z
+DTSTAMP:20261106T091224Z
 DTSTART;TZID=Europe/Vienna:20261130T063000
 DTEND;TZID=Europe/Vienna:20261130T173000
 SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30

@@ -176,13 +176,13 @@ der Zeile sein. Danach darf kein Leerzeichen mehr folgen. Du kannst den Befehl
 auch sicher in einer einzigen Zeile ausführen:
 
 ```sh
-python3 -m src.dienstplan --person "Gruber J." --compare-person "Biechl S." --compare-output "working/vergleich-gruber-biechl.md"
+python3 -m src.dienstplan --person "Gruber J." --compare-person "Muster M." --compare-output "working/vergleich-gruber-muster.md"
 ```
 
 Das Ergebnis wird als Markdown-Datei gespeichert:
 
 ```text
-working/vergleich-gruber-biechl.md
+working/vergleich-gruber-muster.md
 ```
 
 Die Datei enthält:
@@ -197,7 +197,7 @@ Wenn du die erste Person nicht angeben möchtest, wird automatisch `Gruber J.`
 verwendet:
 
 ```sh
-python3 -m src.dienstplan --compare-person "Biechl S."
+python3 -m src.dienstplan --compare-person "Muster M."
 ```
 
 ## 8. Automatische Verarbeitung mit Watch-Modus
