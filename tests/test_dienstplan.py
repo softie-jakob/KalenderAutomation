@@ -1,12 +1,16 @@
 import unittest
 from datetime import date, datetime, timezone
+from unittest.mock import patch
 
 from src.dienstplan import (
+    _fold,
     build_ics,
     compare_people,
     parse_legend,
     parse_plan,
+    publish_output,
     process_once,
+    select_latest_plan,
 )
 
 
@@ -58,10 +62,16 @@ class DienstplanTests(unittest.TestCase):
             ics = build_ics(plan, datetime(2026, 10, 1, tzinfo=timezone.utc))
         self.assertEqual(len(plan.shifts), 2)
         self.assertIn("UID:gruber-j-20261002@kalender-automation.local", ics)
-        self.assertIn("Besatzungsmitglieder: Kol", ics)
-        self.assertIn("lege T. (07T Rolle T)", ics)
+        unfolded_ics = ics.replace("\r\n ", "")
+        self.assertIn("Besatzungsmitglieder: Kol", unfolded_ics)
+        self.assertIn("lege T. (07T Rolle T)", unfolded_ics)
         self.assertIn("DTSTART;VALUE=DATE:20261003", ics)
         self.assertNotIn("UID:gruber-j-20261001", ics)
+
+    def test_ics_folding_keeps_every_line_within_75_octets(self) -> None:
+        folded = _fold("X:" + "ä" * 80)
+
+        self.assertTrue(all(len(line.encode("utf-8")) <= 75 for line in folded.split("\r\n")))
 
     def test_vacation_and_requested_days_off_are_all_day_events(self) -> None:
         from pathlib import Path
@@ -167,6 +177,48 @@ Kollege T. 100:00
 
         self.assertIn("DTSTART;TZID=Europe/Vienna:20261002T063000", ics)
         self.assertIn("DTSTART;TZID=Europe/Vienna:20261102T063000", ics)
+
+    def test_same_version_uses_only_the_newest_file(self) -> None:
+        from pathlib import Path
+        import tempfile
+        import os
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "input").mkdir()
+            older = root / "input" / "older.txt"
+            newer = root / "input" / "newer.txt"
+            older.write_text(TEXT.replace("Version: 02", "Version: 01"), encoding="utf-8")
+            newer.write_text(
+                TEXT.replace("Version: 02", "Version: 01").replace("07B SEF", "07T SEF"),
+                encoding="utf-8",
+            )
+            os.utime(older, (100, 100))
+            os.utime(newer, (200, 200))
+
+            _, _, plan, _ = select_latest_plan(root / "input")
+
+        self.assertEqual(plan.shifts[0].definition.code, "07T")
+
+    def test_publish_commits_only_the_calendar_file(self) -> None:
+        from pathlib import Path
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            pages = root / "pages"
+            (root / "output").mkdir()
+            pages.mkdir()
+            source = root / "output" / "dienstplan-gruber-j.ics"
+            source.write_text("calendar", encoding="utf-8")
+
+            with patch("src.dienstplan.subprocess.run") as run:
+                run.return_value.returncode = 1
+                publish_output(root, pages, "Gruber J.")
+
+        commit_call = run.call_args_list[2]
+        self.assertIn("--only", commit_call.args[0])
+        self.assertEqual(commit_call.args[0][-1], "dienstplan-gruber-j.ics")
 
     def test_change_report_backup_archive_dry_run_and_person(self) -> None:
         from pathlib import Path

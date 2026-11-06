@@ -288,8 +288,8 @@ def _escape(value: str) -> str:
 def _fold(line: str) -> str:
     encoded = line.encode("utf-8")
     chunks: list[bytes] = []
-    while len(encoded) > 75:
-        cut = 75
+    while len(encoded) > (75 if not chunks else 74):
+        cut = 75 if not chunks else 74
         while cut > 0 and (encoded[cut] & 0xC0) == 0x80:
             cut -= 1
         chunks.append(encoded[:cut])
@@ -398,7 +398,7 @@ def select_latest_plan(
 
     shifts_by_day: dict[date, Shift] = {}
     warnings: list[str] = []
-    for path, plan, _text, _key in sorted(parsed, key=lambda item: item[3]):
+    for path, plan, _text, _key in sorted(latest_by_month.values(), key=lambda item: item[3]):
         shifts_by_day.update({shift.day: shift for shift in plan.shifts})
     for _path, plan, _text, _key in sorted(latest_by_month.values(), key=lambda item: item[1].start):
         warnings.extend(plan.warnings)
@@ -501,12 +501,15 @@ def publish_output(root: Path, pages_dir: Path, target_person: str) -> None:
     shutil.copyfile(source, target)
     subprocess.run(["git", "-C", str(pages_dir), "add", target.name], check=True)
     result = subprocess.run(
-        ["git", "-C", str(pages_dir), "diff", "--cached", "--quiet"],
+        ["git", "-C", str(pages_dir), "diff", "--cached", "--quiet", "--", target.name],
         check=False,
     )
     if result.returncode == 1:
         subprocess.run(
-            ["git", "-C", str(pages_dir), "commit", "-m", "Aktualisiere Dienstplan-Kalender"],
+            [
+                "git", "-C", str(pages_dir), "commit", "--only",
+                "-m", "Aktualisiere Dienstplan-Kalender", "--", target.name,
+            ],
             check=True,
         )
         subprocess.run(["git", "-C", str(pages_dir), "push"], check=True)
