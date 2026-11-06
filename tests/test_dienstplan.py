@@ -25,6 +25,15 @@ class DienstplanTests(unittest.TestCase):
         self.assertEqual(legend["07B"].end.hour, 18)
         self.assertFalse(legend["SEF"].is_timed)
 
+    def test_fd_is_a_timed_reserve_shift(self) -> None:
+        definition = parse_legend(["FD   Fahrdienstreserve"])["FD"]
+
+        self.assertEqual(definition.description, "Fahrdienstreserve")
+        self.assertEqual(definition.start.hour, 7)
+        self.assertEqual(definition.start.minute, 0)
+        self.assertEqual(definition.end.hour, 18)
+        self.assertEqual(definition.end.minute, 0)
+
     def test_parse_and_stable_uid(self) -> None:
         from pathlib import Path
         import tempfile
@@ -40,6 +49,31 @@ class DienstplanTests(unittest.TestCase):
         self.assertIn("lege T. (07T Rolle T)", ics)
         self.assertIn("DTSTART;VALUE=DATE:20261003", ics)
         self.assertNotIn("UID:gruber-j-20261001", ics)
+
+    def test_vacation_and_requested_days_off_are_all_day_events(self) -> None:
+        from pathlib import Path
+        import tempfile
+
+        text = TEXT.replace(
+            "Gruber J. . 07B SEF",
+            "Gruber J. U X XR",
+        ).replace(
+            "06B   Tour 6 - BF - 06:00-18:00   07B   Tour 7 - BF - 06:30-18:00   SEF   SEF Ausbildung - 8h",
+            "06B   Tour 6 - BF - 06:00-18:00   U   Urlaub   X   Wunschfrei   XR   Wunschfrei (Reserve)",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "plan.txt"
+            path.write_text(text, encoding="utf-8")
+            plan = parse_plan(path)
+            ics = build_ics(plan)
+
+        self.assertEqual(len(plan.shifts), 3)
+        self.assertIn("SUMMARY:U - Urlaub", ics)
+        self.assertIn("SUMMARY:X - Wunschfrei", ics)
+        self.assertIn("SUMMARY:XR - Wunschfrei (Reserve)", ics)
+        self.assertIn("DTSTART;VALUE=DATE:20261001", ics)
+        self.assertIn("DTSTART;VALUE=DATE:20261002", ics)
+        self.assertIn("DTSTART;VALUE=DATE:20261003", ics)
 
     def test_crew_matches_first_two_characters_and_reports_role(self) -> None:
         from pathlib import Path

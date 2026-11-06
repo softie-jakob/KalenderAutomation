@@ -16,8 +16,10 @@ from typing import Iterable, Optional
 TARGET_PERSON = "Gruber J."
 TIMEZONE = "Europe/Vienna"
 PRODID = "-//Kalender Automation//Dienstplan//DE"
-IGNORED_CODES = {".", "U", "X", "XR", "K"}
-SPECIAL_ALL_DAY_CODES = {"A", "SEF"}
+IGNORED_CODES = {".", "K"}
+SPECIAL_ALL_DAY_CODES = {"A", "SEF", "U", "X", "XR"}
+FD_START = dt_time(7, 0)
+FD_END = dt_time(18, 0)
 MONTHS = {
     "Jänner": 1, "Januar": 1, "Februar": 2, "März": 3, "April": 4,
     "Mai": 5, "Juni": 6, "Juli": 7, "August": 8, "September": 9,
@@ -104,6 +106,10 @@ def parse_legend(lines: Iterable[str]) -> dict[str, ShiftDefinition]:
         ):
             code, description = match.groups()
             definitions[code] = _parse_definition(code, description)
+    if "FD" in definitions:
+        definitions["FD"] = ShiftDefinition(
+            "FD", definitions["FD"].description, FD_START, FD_END
+        )
     return definitions
 
 
