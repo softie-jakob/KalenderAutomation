@@ -159,6 +159,47 @@ Kollege T. 100:00
             )
             self.assertTrue((root / "output" / "dienstplan-gruber-j.ics").exists())
 
+    def test_json_config_creates_one_calendar_per_person(self) -> None:
+        from pathlib import Path
+        import tempfile
+
+        text = TEXT.replace(
+            "Kollege T. . 07T .",
+            "Kollege T. . 07T 07B",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("input", "working", "output"):
+                (root / name).mkdir()
+            (root / "input" / "2610 V1.txt").write_text(text, encoding="utf-8")
+            (root / "input" / "personen.json").write_text(
+                '{"personen": ["Gruber J.", "Kollege T."]}', encoding="utf-8"
+            )
+
+            process_once(root)
+
+            self.assertTrue((root / "output" / "dienstplan-gruber-j.ics").exists())
+            self.assertTrue((root / "output" / "dienstplan-kollege-t.ics").exists())
+            self.assertIn(
+                "X-WR-CALNAME:Dienstplan Kollege T.",
+                (root / "output" / "dienstplan-kollege-t.ics").read_text(encoding="utf-8"),
+            )
+
+    def test_json_config_reports_unknown_person(self) -> None:
+        from pathlib import Path
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "input").mkdir()
+            (root / "input" / "plan.txt").write_text(TEXT, encoding="utf-8")
+            (root / "input" / "personen.json").write_text(
+                '{"personen": ["Nicht vorhanden"]}', encoding="utf-8"
+            )
+
+            with self.assertRaisesRegex(ValueError, "Person 'Nicht vorhanden' wurde nicht gefunden"):
+                process_once(root)
+
     def test_multiple_months_use_filename_versions_and_are_merged(self) -> None:
         from pathlib import Path
         import tempfile

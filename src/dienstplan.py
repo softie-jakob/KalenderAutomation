@@ -2,10 +2,12 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import re
 import shutil
 import subprocess
 import time
+import unicodedata
 from threading import Event
 from difflib import unified_diff
 from dataclasses import dataclass
@@ -78,7 +80,38 @@ def _filename_plan_key(path: Path) -> Optional[tuple[int, int, int]]:
 
 
 def _person_slug(person: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", person.lower()).strip("-")
+    transliterated = (
+        person.replace("Ä", "Ae").replace("Ö", "Oe").replace("Ü", "Ue")
+        .replace("ä", "ae").replace("ö", "oe").replace("ü", "ue")
+        .replace("ß", "ss")
+    )
+    normalized = unicodedata.normalize("NFKD", transliterated).encode(
+        "ascii", "ignore"
+    ).decode("ascii")
+    return re.sub(r"[^a-z0-9]+", "-", normalized.lower()).strip("-")
+
+
+def load_target_people(input_dir: Path, target_person: Optional[str] = None) -> list[str]:
+    if target_person is not None:
+        return [target_person]
+    config_path = input_dir / "personen.json"
+    if not config_path.exists():
+        return [TARGET_PERSON]
+    try:
+        config = json.loads(config_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        raise ValueError(f"Ungültige JSON-Datei {config_path.name}: {error.msg}.") from error
+    people = config.get("personen") if isinstance(config, dict) else None
+    if not isinstance(people, list) or not people or not all(
+        isinstance(person, str) and person.strip() for person in people
+    ):
+        raise ValueError(
+            f"{config_path.name} muss ein Objekt mit einer nicht leeren Liste "
+            "von Namen unter 'personen' enthalten."
+        )
+    if len(set(people)) != len(people):
+        raise ValueError(f"{config_path.name} enthält einen Namen mehrfach.")
+    return [person.strip() for person in people]
 
 
 def _parse_time(value: str) -> Optional[dt_time]:
@@ -518,39 +551,61 @@ def publish_output(root: Path, pages_dir: Path, target_person: str) -> None:
 def process_once(
     root: Path,
     pages_dir: Optional[Path] = None,
-    target_person: str = TARGET_PERSON,
+    target_person: Optional[str] = None,
     dry_run: bool = False,
 ) -> Plan:
     input_dir = root / "input"
     working_dir = root / "working"
     output_dir = root / "output"
-    source, digest, plan, source_text = select_latest_plan(input_dir, target_person)
-    output_path = output_dir / f"dienstplan-{_person_slug(target_person)}.ics"
-    new_ics = build_ics(plan, target_person=target_person)
-    old_ics = output_path.read_text(encoding="utf-8") if output_path.exists() else ""
-    change_report = render_change_report(old_ics, new_ics)
+    target_people = load_target_people(input_dir, target_person)
+    results: list[Plan] = []
+    for person in target_people:
+        source, digest, plan, source_text = select_latest_plan(input_dir, person)
+        output_path = output_dir / f"dienstplan-{_person_slug(person)}.ics"
+        new_ics = build_ics(plan, target_person=person)
+        old_ics = output_path.read_text(encoding="utf-8") if output_path.exists() else ""
+        change_report = render_change_report(old_ics, new_ics)
+        if dry_run:
+            print(f"{person} ({output_path.name}):")
+            print(change_report, end="")
+            results.append(plan)
+            continue
+        working_dir.mkdir(exist_ok=True)
+        output_dir.mkdir(exist_ok=True)
+        slug = _person_slug(person)
+        (working_dir / f"last-input-{slug}.sha256").write_text(
+            f"{digest}  {source.name}\n", encoding="utf-8"
+        )
+        (working_dir / f"plan-{slug}.txt").write_text(source_text, encoding="utf-8")
+        (working_dir / f"preview-{slug}.txt").write_text(
+            render_preview(plan, person), encoding="utf-8"
+        )
+        (working_dir / f"changes-{slug}.txt").write_text(change_report, encoding="utf-8")
+        if len(target_people) == 1:
+            (working_dir / "last-input.sha256").write_text(
+                f"{digest}  {source.name}\n", encoding="utf-8"
+            )
+            (working_dir / "plan.txt").write_text(source_text, encoding="utf-8")
+            (working_dir / "preview.txt").write_text(
+                render_preview(plan, person), encoding="utf-8"
+            )
+            (working_dir / "changes.txt").write_text(change_report, encoding="utf-8")
+        if old_ics != new_ics and output_path.exists():
+            history_dir = working_dir / "history"
+            history_dir.mkdir(exist_ok=True)
+            stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+            (history_dir / f"{output_path.stem}-{stamp}.ics").write_text(old_ics, encoding="utf-8")
+        if old_ics != new_ics:
+            output_path.write_text(new_ics, encoding="utf-8")
+        if pages_dir is not None:
+            publish_output(root, pages_dir, person)
+        results.append(plan)
     if dry_run:
-        print(change_report, end="")
-        return plan
+        return results[0]
     working_dir.mkdir(exist_ok=True)
     output_dir.mkdir(exist_ok=True)
-    (working_dir / "last-input.sha256").write_text(f"{digest}  {source.name}\n", encoding="utf-8")
-    (working_dir / "plan.txt").write_text(source_text, encoding="utf-8")
-    (working_dir / "preview.txt").write_text(
-        render_preview(plan, target_person), encoding="utf-8"
-    )
-    (working_dir / "changes.txt").write_text(change_report, encoding="utf-8")
-    if old_ics != new_ics and output_path.exists():
-        history_dir = working_dir / "history"
-        history_dir.mkdir(exist_ok=True)
-        stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-        (history_dir / f"{output_path.stem}-{stamp}.ics").write_text(old_ics, encoding="utf-8")
-    if old_ics != new_ics:
-        output_path.write_text(new_ics, encoding="utf-8")
     _archive_superseded_inputs(input_dir, working_dir / "archive")
-    if pages_dir is not None:
-        publish_output(root, pages_dir, target_person)
-    return plan
+    return results[0]
 
 
 def render_preview(plan: Plan, target_person: str = TARGET_PERSON) -> str:
@@ -665,7 +720,7 @@ def watch(
     root: Path,
     interval: float,
     pages_dir: Optional[Path] = None,
-    target_person: str = TARGET_PERSON,
+    target_person: Optional[str] = None,
     stop_event: Optional[Event] = None,
 ) -> None:
     last_signature: Optional[tuple[tuple[str, int, int], ...]] = None
@@ -674,7 +729,7 @@ def watch(
         signature = tuple(
             sorted((path.name, path.stat().st_size, path.stat().st_mtime_ns)
                    for path in input_dir.iterdir()
-                   if path.is_file() and path.suffix.lower() in {".txt", ".pdf"})
+                   if path.is_file() and path.suffix.lower() in {".txt", ".pdf", ".json"})
         ) if input_dir.exists() else ()
         if signature != last_signature:
             try:
@@ -691,11 +746,14 @@ def watch(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Dienstplan für Gruber J. als ICS erzeugen.")
+    parser = argparse.ArgumentParser(description="Dienstpläne als ICS-Dateien erzeugen.")
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--watch", action="store_true", help="input/ dauerhaft überwachen.")
     parser.add_argument("--interval", type=float, default=10.0)
-    parser.add_argument("--person", default=TARGET_PERSON, help="Name der Zielperson im Dienstplan.")
+    parser.add_argument(
+        "--person",
+        help="Name der Zielperson; ohne Angabe wird input/personen.json verwendet.",
+    )
     parser.add_argument("--dry-run", action="store_true", help="Nur Änderungen anzeigen, nichts schreiben.")
     parser.add_argument(
         "--compare-person",
@@ -715,7 +773,9 @@ def main() -> None:
     if args.compare_person:
         if args.watch or args.dry_run or args.publish_dir:
             parser.error("--compare-person kann nicht mit --watch, --dry-run oder --publish-dir verwendet werden.")
-        output = compare_people(args.root, args.person, args.compare_person, args.compare_output)
+        output = compare_people(
+            args.root, args.person or TARGET_PERSON, args.compare_person, args.compare_output
+        )
         print(f"Vergleich gespeichert: {output}")
         return
     if args.watch:
@@ -724,7 +784,8 @@ def main() -> None:
         watch(args.root, args.interval, args.publish_dir, args.person)
     else:
         plan = process_once(args.root, args.publish_dir, args.person, args.dry_run)
-        print(render_preview(plan, args.person))
+        preview_person = args.person or load_target_people(args.root / "input")[0]
+        print(render_preview(plan, preview_person))
 
 
 if __name__ == "__main__":

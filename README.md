@@ -1,8 +1,8 @@
 # Dienstplan-Kalender
 
 Dieses Projekt liest Dienstplan-PDFs oder -Textdateien aus `input/` und erzeugt
-eine abonnierbare iCalendar-Datei für eine Person. Standardmäßig wird
-`Gruber J.` verarbeitet.
+eine abonnierbare iCalendar-Datei für eine Person. Die zu verarbeitenden Personen werden standardmäßig in `input/personen.json`
+festgelegt.
 
 ## 1. Terminal öffnen
 
@@ -118,6 +118,27 @@ working/plan.txt          extrahierter Text der zuletzt ausgewählten Quelle
 
 Die PDF-Dateien in `input/` werden nicht verändert, außer dass ältere Versionen
 nach erfolgreicher Verarbeitung archiviert und dort entfernt werden.
+
+### Zielpersonen festlegen
+
+Lege im Ordner `input/` die Datei `personen.json` an. Die Namen müssen exakt
+so geschrieben sein wie im Dienstplan:
+
+```json
+{
+  "personen": [
+    "Gruber J.",
+    "Muster M."
+  ]
+}
+```
+
+Für jede Person wird eine eigene Datei erzeugt, zum Beispiel
+`output/dienstplan-gruber-j.ics`. Großschreibung, Leerzeichen und Punkte werden
+für den Dateinamen automatisch normalisiert. Umlaute werden ersetzt, zum
+Beispiel `Müller Ä.` durch `mueller-a`. Wird keine `personen.json` gefunden,
+wird weiterhin nur `Gruber J.` verarbeitet. Mit `--person "Name"` kann die
+JSON-Datei für einen einzelnen Lauf überschrieben werden.
 
 ## 4a. Grafische Oberfläche
 
@@ -243,7 +264,44 @@ Der Push verwendet deine lokale Git-Authentifizierung. Zugangsdaten werden
 nicht im Projekt gespeichert. Die Quelldateien aus `input/` dürfen nicht in
 das öffentliche Pages-Repository kopiert werden.
 
-## 10. Typische Fehler
+## 10. Kalender abonnieren
+
+Veröffentliche die ICS-Dateien zuerst über GitHub Pages oder einen anderen
+Webserver. Kopiere danach den **HTTPS-Link** der jeweiligen Datei, zum Beispiel
+`https://example.github.io/dienstplan-gruber-j.ics`. Verwende die URL des
+Kalenders, nicht den Link zum Bearbeiten oder Herunterladen einer lokalen Datei.
+
+### Google Kalender
+
+1. Öffne [Google Kalender](https://calendar.google.com) im Browser.
+2. Klicke neben **Weitere Kalender** auf **+** und wähle **Per URL**.
+3. Füge den HTTPS-Link ein und klicke auf **Kalender hinzufügen**.
+
+### Outlook / Microsoft 365
+
+1. Öffne Outlook im Browser und gehe zu **Kalender**.
+2. Wähle **Kalender hinzufügen** → **Aus dem Internet abonnieren**.
+3. Füge den HTTPS-Link ein, vergebe einen Namen und bestätige.
+
+### Apple Kalender
+
+1. Öffne Kalender auf dem Mac.
+2. Wähle **Ablage** → **Neues Kalenderabonnement**.
+3. Füge den HTTPS-Link ein und bestätige. Auf iPhone oder iPad kann der Link
+   über Safari geöffnet und als Kalenderabonnement hinzugefügt werden.
+
+### Thunderbird
+
+1. Öffne die Kalenderansicht und wähle **Datei** → **Neu** → **Kalender**.
+2. Wähle **Im Netzwerk** und als Format **iCalendar (ICS)**.
+3. Füge den HTTPS-Link ein und speichere den Kalender.
+
+Ein Kalenderabonnement wird regelmäßig vom jeweiligen Kalenderdienst
+aktualisiert. Der genaue Aktualisierungszeitpunkt kann nicht vom Projekt
+erzwungen werden. Änderungen erscheinen daher möglicherweise erst nach einiger
+Zeit.
+
+## 11. Typische Fehler
 
 ### `unrecognized arguments`
 
@@ -276,7 +334,7 @@ pwd
 ls input
 ```
 
-## 11. Tests ausführen
+## 12. Tests ausführen
 
 ```sh
 python3 -m unittest discover -s tests -v
