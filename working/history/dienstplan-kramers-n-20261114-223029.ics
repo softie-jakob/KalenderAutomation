@@ -1,0 +1,638 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Kalender Automation//Dienstplan//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dienstplan Kramers N.
+X-WR-TIMEZONE:Europe/Vienna
+BEGIN:VTIMEZONE
+TZID:Europe/Vienna
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:kramers-n-20261002@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261002T080000
+DTEND;TZID=Europe/Vienna:20261002T193000
+SUMMARY:12B - Tour 12 - BF - 08:00-19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 12B\; Dienst: Tour 12 - BF 
+ - 08:00-19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgliede
+ r: Haslauer-Hadz.L (12F Rolle F)\, Malli L. (12T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261003@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261003T063000
+DTEND;TZID=Europe/Vienna:20261003T183000
+SUMMARY:B2T - Tour B2 - TF - 06:30-18:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B2T\; Dienst: Tour B2 - TF 
+ - 06:30-18:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgliede
+ r: Fürk T. (B2F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261005@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261005T063000
+DTEND;TZID=Europe/Vienna:20261005T173000
+SUMMARY:T3T - Tour T3 - TF - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T3T\; Dienst: Tour T3 - TF 
+ - 06:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgliede
+ r: Dizdarevic E. (T3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261006@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:SEF - SEF Ausbildung - 8h
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: SEF\; Dienst: SEF Ausbildun
+ g - 8h\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: Grub
+ er J. (SEF Rolle F)\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261009@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261009T063000
+DTEND;TZID=Europe/Vienna:20261009T183000
+SUMMARY:B2B - Tour B2 - BF - 06:30-18:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B2B\; Dienst: Tour B2 - BF 
+ - 06:30-18:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgliede
+ r: Aigner M. (B2F Rolle F)\, Rettenegger B. (B2T Rolle T)\, ZD FSJ (B2F Ro
+ lle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261010@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:03B - Unbekanntes Dienstkürzel
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 03B\; Dienst: Unbekanntes D
+ ienstkürzel\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Benedikter C. (03F Rolle F)\, Müller L. (03T Rolle T)\; Dauer: 8 Stunde
+ n\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261012@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261012T063000
+DTEND;TZID=Europe/Vienna:20261012T173000
+SUMMARY:T1F - Tour T1 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T1F\; Dienst: Tour T1 - Fah
+ rer - 06:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Klopf Y. (T1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261014@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261014T060000
+DTEND;TZID=Europe/Vienna:20261014T180000
+SUMMARY:R2B - RTW 2 - BF - 6:00-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: R2B\; Dienst: RTW 2 - BF - 
+ 6:00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: 
+ Canavate M. (R2T Rolle T)\, Eibl D. (R2F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261015@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261015T060000
+DTEND;TZID=Europe/Vienna:20261015T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fah
+ rer - 06:00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Gasteiner M. (B1B Rolle B)\, Hofbauer C. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261016@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261016T070000
+DTEND;TZID=Europe/Vienna:20261016T173000
+SUMMARY:T4F - Tour T4 - Fahrer - 07:00-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T4F\; Dienst: Tour T4 - Fah
+ rer - 07:00-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Powolny L. (T4T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261017@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261017T060000
+DTEND;TZID=Europe/Vienna:20261017T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fah
+ rer - 06:00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Niedermoser N. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261019@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261019T063000
+DTEND;TZID=Europe/Vienna:20261019T173000
+SUMMARY:T2F - Tour T2 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T2F\; Dienst: Tour T2 - Fah
+ rer - 06:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Jäger K. (T2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261020@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261020T060000
+DTEND;TZID=Europe/Vienna:20261020T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fah
+ rer - 06:00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Schreiner P. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261022@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261022T063000
+DTEND;TZID=Europe/Vienna:20261022T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fah
+ rer - 06:30-18:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Brandauer G. (B2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261023@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261023T060000
+DTEND;TZID=Europe/Vienna:20261023T180000
+SUMMARY:R1B - RTW 1 - BF - 6:00-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: R1B\; Dienst: RTW 1 - BF - 
+ 6:00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: 
+ Bauer B. (R1F Rolle F)\, NFS NKV (R1F Rolle F)\, Perwein B. (R1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261027@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:A - LSt Ausbildung 8h
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 
+ 8h\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine we
+ iteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261028@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261028T060000
+DTEND;TZID=Europe/Vienna:20261028T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fah
+ rer - 06:00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Jungwirth L. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261029@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:A - LSt Ausbildung 8h
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 
+ 8h\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine we
+ iteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261102@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:X - Wunschfrei
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Qu
+ elle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine weiteren 
+ erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261103@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261103T060000
+DTEND;TZID=Europe/Vienna:20261103T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fah
+ rer - 06:00-18:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Seifter B. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261104@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261104T080000
+DTEND;TZID=Europe/Vienna:20261104T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fah
+ rer - 08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Schiefer L. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261105@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261105T080000
+DTEND;TZID=Europe/Vienna:20261105T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fah
+ rer - 08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Gatti S. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261106@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261106T080000
+DTEND;TZID=Europe/Vienna:20261106T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fah
+ rer - 08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Fleckl L. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261109@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261109T063000
+DTEND;TZID=Europe/Vienna:20261109T173000
+SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T3F\; Dienst: Tour T3 - Fah
+ rer - 06:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Tisvani E. (T3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261110@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261110T103000
+DTEND;TZID=Europe/Vienna:20261110T193000
+SUMMARY:08F - Tour 8 - Fahrer - 10:30 -19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 08F\; Dienst: Tour 8 - Fahr
+ er - 10:30 -19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Haas K. (08T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261112@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261112T063000
+DTEND;TZID=Europe/Vienna:20261112T173000
+SUMMARY:T2F - Tour T2 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T2F\; Dienst: Tour T2 - Fah
+ rer - 06:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Seifter B. (T2T Rolle T)\, Transportführer RS (T2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261113@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261113T063000
+DTEND;TZID=Europe/Vienna:20261113T173000
+SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T3F\; Dienst: Tour T3 - Fah
+ rer - 06:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Becher F. (T3T Rolle T)\, ZD FSJ Fahrer RS (T3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261114@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261114T073000
+DTEND;TZID=Europe/Vienna:20261114T193000
+SUMMARY:R3B - RTW 3 - BF - 7:30-19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: R3B\; Dienst: RTW 3 - BF - 
+ 7:30-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: 
+ Bauer B. (R3F Rolle F)\, NFS NKV (R3T Rolle T)\, Stark D. (R3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261116@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261116T080000
+DTEND;TZID=Europe/Vienna:20261116T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fah
+ rer - 08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Spitzelseder A. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261117@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261117T073000
+DTEND;TZID=Europe/Vienna:20261117T180000
+SUMMARY:T7F - Tour T7 - Fahrer - 07:30-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T7F\; Dienst: Tour T7 - Fah
+ rer - 07:30-18:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Spitzelseder A. (T7T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261118@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261118T073000
+DTEND;TZID=Europe/Vienna:20261118T180000
+SUMMARY:T7F - Tour T7 - Fahrer - 07:30-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T7F\; Dienst: Tour T7 - Fah
+ rer - 07:30-18:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Irnleitner R. (T7T Rolle T)\, ZD FSJ ohne RS (T7F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261119@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261119T063000
+DTEND;TZID=Europe/Vienna:20261119T173000
+SUMMARY:T2F - Tour T2 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T2F\; Dienst: Tour T2 - Fah
+ rer - 06:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Irnleitner R. (T2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261120@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:X - Wunschfrei
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Qu
+ elle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine weiteren 
+ erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261121@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:X - Wunschfrei
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Qu
+ elle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine weiteren 
+ erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261123@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261123T063000
+DTEND;TZID=Europe/Vienna:20261123T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fah
+ rer - 06:30-18:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Jäger K. (B2B Rolle B)\, Kohlböck J. (B2T Rolle T)\, ZD FSJ Fahre
+ r RS (B2F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261124@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261124T060000
+DTEND;TZID=Europe/Vienna:20261124T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fah
+ rer - 06:00-18:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Fleckl L. (B1T Rolle T)\, Gruber M. (B1B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261125@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261125T070000
+DTEND;TZID=Europe/Vienna:20261125T173000
+SUMMARY:T4F - Tour T4 - Fahrer - 07:00-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T4F\; Dienst: Tour T4 - Fah
+ rer - 07:00-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Rettenegger B. (T4T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261126@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261126T063000
+DTEND;TZID=Europe/Vienna:20261126T173000
+SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T3F\; Dienst: Tour T3 - Fah
+ rer - 06:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Schmid F. (T3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261127@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261127T080000
+DTEND;TZID=Europe/Vienna:20261127T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fah
+ rer - 08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Prantner V. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261130@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261130T063000
+DTEND;TZID=Europe/Vienna:20261130T173000
+SUMMARY:T2F - Tour T2 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T2F\; Dienst: Tour T2 - Fah
+ rer - 06:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgl
+ ieder: Hufnagl S. (T2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261201@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261201T073000
+DTEND;TZID=Europe/Vienna:20261201T190000
+SUMMARY:18F - Tour 18 - Fahrer - 07:30-19:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 18F\; Dienst: Tour 18 - Fah
+ rer - 07:30-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Jäger K. (18T Rolle T)\, Prenninger J. (18B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261202@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261202T063000
+DTEND;TZID=Europe/Vienna:20261202T173000
+SUMMARY:T1F - Tour T1 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T1F\; Dienst: Tour T1 - Fah
+ rer - 06:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Becher F. (T1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261203@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261203T070000
+DTEND;TZID=Europe/Vienna:20261203T190000
+SUMMARY:17F - Tour 17 - Fahrer - 07:00-19:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 17F\; Dienst: Tour 17 - Fah
+ rer - 07:00-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Becher F. (17B Rolle B)\, Oberascher F. (17T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261207@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261207T073000
+DTEND;TZID=Europe/Vienna:20261207T173000
+SUMMARY:T5F - Tour T5 - Fahrer - 07:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T5F\; Dienst: Tour T5 - Fah
+ rer - 07:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Depauly M. (T5T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261209@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261209T073000
+DTEND;TZID=Europe/Vienna:20261209T190000
+SUMMARY:18F - Tour 18 - Fahrer - 07:30-19:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 18F\; Dienst: Tour 18 - Fah
+ rer - 07:30-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Gerke D. (18T Rolle T)\, Schönbauer V. (18B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261210@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261210T080000
+DTEND;TZID=Europe/Vienna:20261210T193000
+SUMMARY:13F - Tour 13 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 13F\; Dienst: Tour 13 - Fah
+ rer - 08:00-19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Fleckl L. (13B Rolle B)\, Stockert T. (13T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261211@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261211T073000
+DTEND;TZID=Europe/Vienna:20261211T173000
+SUMMARY:T6F - Tour T6 - Fahrer - 07:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T6F\; Dienst: Tour T6 - Fah
+ rer - 07:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Kahwati E. (T6T Rolle T)\, Schneckenleit.F (T6B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261212@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261212T103000
+DTEND;TZID=Europe/Vienna:20261212T193000
+SUMMARY:08F - Tour 8 - Fahrer - 10:30 -19:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 08F\; Dienst: Tour 8 - Fahr
+ er - 10:30 -19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Becher F. (08B Rolle B)\, Jäger K. (08T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261215@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261215T063000
+DTEND;TZID=Europe/Vienna:20261215T173000
+SUMMARY:T2F - Tour T2 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T2F\; Dienst: Tour T2 - Fah
+ rer - 06:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Haritopoulos M. (T2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261216@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261216T070000
+DTEND;TZID=Europe/Vienna:20261216T190000
+SUMMARY:17F - Tour 17 - Fahrer - 07:00-19:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 17F\; Dienst: Tour 17 - Fah
+ rer - 07:00-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Schreiner P. (17T Rolle T)\, Tomas G. (17B Rolle B)\, ZD FSJ Fahrer
+  RS (17F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261217@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261217T063000
+DTEND;TZID=Europe/Vienna:20261217T173000
+SUMMARY:T1F - Tour T1 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T1F\; Dienst: Tour T1 - Fah
+ rer - 06:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Müller K. (T1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261218@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:03F - Unbekanntes Dienstkürzel
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 03F\; Dienst: Unbekanntes D
+ ienstkürzel\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder
+ : Bahr I. (03T Rolle T)\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261221@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:03F - Unbekanntes Dienstkürzel
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: 03F\; Dienst: Unbekanntes D
+ ienstkürzel\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder
+ : Ehrenreich D. (03T Rolle T)\, Pichler M. (03B Rolle B)\; Dauer: 8 Stunde
+ n\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261222@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261222T063000
+DTEND;TZID=Europe/Vienna:20261222T173000
+SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T3F\; Dienst: Tour T3 - Fah
+ rer - 06:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Fleckl L. (T3T Rolle T)\, ZD FSJ (T3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261223@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:X - Wunschfrei
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Qu
+ elle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren 
+ erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261224@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:X - Wunschfrei
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Qu
+ elle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren 
+ erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261225@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261225T060000
+DTEND;TZID=Europe/Vienna:20261225T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fah
+ rer - 06:00-18:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Pendl F. (B1B Rolle B)\, Poosch T. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261228@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261228T073000
+DTEND;TZID=Europe/Vienna:20261228T173000
+SUMMARY:T6F - Tour T6 - Fahrer - 07:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T6F\; Dienst: Tour T6 - Fah
+ rer - 07:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Depauly M. (T6T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261229@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261229T063000
+DTEND;TZID=Europe/Vienna:20261229T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fah
+ rer - 06:30-18:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Irnleitner R. (B2T Rolle T)\, Kroißl M. (B2B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261230@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;TZID=Europe/Vienna:20261230T073000
+DTEND;TZID=Europe/Vienna:20261230T173000
+SUMMARY:T6F - Tour T6 - Fahrer - 07:30-17:30
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: T6F\; Dienst: Tour T6 - Fah
+ rer - 07:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitgl
+ ieder: Stary R. (T6T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:kramers-n-20261231@kalender-automation.local
+DTSTAMP:20261114T074454Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:X - Wunschfrei
+DESCRIPTION:Person: Kramers N.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Qu
+ elle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren 
+ erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+END:VCALENDAR

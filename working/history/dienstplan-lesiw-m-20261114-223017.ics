@@ -1,0 +1,605 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Kalender Automation//Dienstplan//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dienstplan Lesiw M.
+X-WR-TIMEZONE:Europe/Vienna
+BEGIN:VTIMEZONE
+TZID:Europe/Vienna
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:lesiw-m-20261006@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:01B - Unbekanntes Dienstkürzel
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: 01B\; Dienst: Unbekanntes Die
+ nstkürzel\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: 
+ Eder O. (01F Rolle F)\, Machmudian J. (01T Rolle T)\; Dauer: 8 Stunden\; B
+ eginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261007@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261007T073000
+DTEND;TZID=Europe/Vienna:20261007T193000
+SUMMARY:R4B - RTW 4 - BF - 7:30-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: R4B\; Dienst: RTW 4 - BF - 7:
+ 30-19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: Or
+ kic I. (R4F Rolle F)\, Perwein B. (R4T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261009@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:K1 - Unbekanntes Dienstkürzel
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: K1\; Dienst: Unbekanntes Dien
+ stkürzel\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: k
+ eine weiteren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261010@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261010T060000
+DTEND;TZID=Europe/Vienna:20261010T180000
+SUMMARY:06B - Tour 6 - BF - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: 06B\; Dienst: Tour 6 - BF - 0
+ 6:00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: 
+ Schiefer K. (06F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261012@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261012T063000
+DTEND;TZID=Europe/Vienna:20261012T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Janschütz K. (B2T Rolle T)\, Rettenegger B. (B2B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261013@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261013T080000
+DTEND;TZID=Europe/Vienna:20261013T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Haas K. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261014@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261014T080000
+DTEND;TZID=Europe/Vienna:20261014T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Brandauer G. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261016@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261016T073000
+DTEND;TZID=Europe/Vienna:20261016T173000
+SUMMARY:T5F - Tour T5 - Fahrer - 07:30-17:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: T5F\; Dienst: Tour T5 - Fahre
+ r - 07:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Gerke D. (T5T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261017@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261017T113000
+DTEND;TZID=Europe/Vienna:20261017T193000
+SUMMARY:09B - Tour 9 - BF - 11:30 - 19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: 09B\; Dienst: Tour 9 - BF - 1
+ 1:30 - 19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Henschel M. (09F Rolle F)\, Murauer A. (09T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261019@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261019T080000
+DTEND;TZID=Europe/Vienna:20261019T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Gerke D. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261020@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261020T070000
+DTEND;TZID=Europe/Vienna:20261020T173000
+SUMMARY:T4F - Tour T4 - Fahrer - 07:00-17:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: T4F\; Dienst: Tour T4 - Fahre
+ r - 07:00-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Ehrenreich D. (T4T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261021@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:SEF - SEF Ausbildung - 8h
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: SEF\; Dienst: SEF Ausbildung 
+ - 8h\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: Kraiha
+ mmer S. (SEF Rolle F)\, Lang A. (SEF Rolle F)\, Unterrainer C. (SEF Rolle 
+ F)\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261022@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261022T063000
+DTEND;TZID=Europe/Vienna:20261022T173000
+SUMMARY:T1F - Tour T1 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: T1F\; Dienst: Tour T1 - Fahre
+ r - 06:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: BFD Hauptamtlich (T1F Rolle F)\, Janschütz K. (T1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261023@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261023T060000
+DTEND;TZID=Europe/Vienna:20261023T180000
+SUMMARY:R2B - RTW 2 - BF - 6:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: R2B\; Dienst: RTW 2 - BF - 6:
+ 00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: Fa
+ zliu T. (R2T Rolle T)\, Moser F. (R2F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261027@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:A - LSt Ausbildung 8h
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 8h
+ \; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine weit
+ eren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261028@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:A - LSt Ausbildung 8h
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 8h
+ \; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine weit
+ eren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261029@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261029T063000
+DTEND;TZID=Europe/Vienna:20261029T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Brandauer G. (B2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261030@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261030T063000
+DTEND;TZID=Europe/Vienna:20261030T173000
+SUMMARY:T1F - Tour T1 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: T1F\; Dienst: Tour T1 - Fahre
+ r - 06:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Cikic B. (T1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261102@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261102T060000
+DTEND;TZID=Europe/Vienna:20261102T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Becher F. (B1T Rolle T)\, Hotter P. (B1B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261103@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:XR - Wunschfrei
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: XR\; Dienst: Wunschfrei\; Que
+ lle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine weiteren e
+ rkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261104@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:XR - Wunschfrei
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: XR\; Dienst: Wunschfrei\; Que
+ lle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine weiteren e
+ rkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261105@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261105T060000
+DTEND;TZID=Europe/Vienna:20261105T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Hufnagl S. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261106@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261106T070000
+DTEND;TZID=Europe/Vienna:20261106T163000
+SUMMARY:K1 - Krank bis 3 Tage L Lagertätigkeit - 07:00-16:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: K1\; Dienst: Krank bis 3 Tage
+  L Lagertätigkeit - 07:00-16:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; 
+ Besatzungsmitglieder: keine weiteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261110@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261110T063000
+DTEND;TZID=Europe/Vienna:20261110T173000
+SUMMARY:T3F - Tour T3 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: T3F\; Dienst: Tour T3 - Fahre
+ r - 06:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Pendl F. (T3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261111@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261111T060000
+DTEND;TZID=Europe/Vienna:20261111T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Sitte M. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261113@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261113T063000
+DTEND;TZID=Europe/Vienna:20261113T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Halwax T. (B2T Rolle T)\, Pendl F. (B2B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261116@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:X - Wunschfrei
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Quel
+ le: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine weiteren er
+ kannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261117@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261117T063000
+DTEND;TZID=Europe/Vienna:20261117T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: keine weiteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261118@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261118T063000
+DTEND;TZID=Europe/Vienna:20261118T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Dunkelmann L. (B2B Rolle B)\, Halwax T. (B2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261119@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261119T063000
+DTEND;TZID=Europe/Vienna:20261119T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Schreiner P. (B2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261120@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261120T063000
+DTEND;TZID=Europe/Vienna:20261120T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Halwax T. (B2B Rolle B)\, Rettenegger B. (B2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261121@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261121T070000
+DTEND;TZID=Europe/Vienna:20261121T180000
+SUMMARY:FD - Fahrdienstreserve
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: FD\; Dienst: Fahrdienstreserv
+ e\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine wei
+ teren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261123@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261123T060000
+DTEND;TZID=Europe/Vienna:20261123T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Halwax T. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261124@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261124T080000
+DTEND;TZID=Europe/Vienna:20261124T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Schreiner P. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261125@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261125T080000
+DTEND;TZID=Europe/Vienna:20261125T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: Wieder D. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261126@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261126T080000
+DTEND;TZID=Europe/Vienna:20261126T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglie
+ der: keine weiteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261127@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261127T070000
+DTEND;TZID=Europe/Vienna:20261127T180000
+SUMMARY:FD - Fahrdienstreserve
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: FD\; Dienst: Fahrdienstreserv
+ e\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine wei
+ teren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261130@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261130T073000
+DTEND;TZID=Europe/Vienna:20261130T193000
+SUMMARY:R4B - RTW 4 - BF - 7:30-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: R4B\; Dienst: RTW 4 - BF - 7:
+ 30-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: An
+ gerer M. (R4F Rolle F)\, Biechl S. (R4T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261201@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:X - Wunschfrei
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: X\; Dienst: Wunschfrei\; Quel
+ le: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren er
+ kannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261202@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:XR - Wunschfrei
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: XR\; Dienst: Wunschfrei\; Que
+ lle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren e
+ rkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261203@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:XR - Wunschfrei
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: XR\; Dienst: Wunschfrei\; Que
+ lle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren e
+ rkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261204@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261204T060000
+DTEND;TZID=Europe/Vienna:20261204T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Obereder J. (B1T Rolle T)\, Wieser G. (B1B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261207@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261207T063000
+DTEND;TZID=Europe/Vienna:20261207T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Liening M. (B2T Rolle T)\, Poosch T. (B2B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261209@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261209T063000
+DTEND;TZID=Europe/Vienna:20261209T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Liening M. (B2T Rolle T)\, Putz J. (B2B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261210@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261210T060000
+DTEND;TZID=Europe/Vienna:20261210T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Birkus D. (B1B Rolle B)\, Haritopoulos M. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261211@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261211T060000
+DTEND;TZID=Europe/Vienna:20261211T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Kohlböck J. (B1T Rolle T)\, Poosch T. (B1B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261214@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261214T080000
+DTEND;TZID=Europe/Vienna:20261214T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Weiß I. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261215@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261215T080000
+DTEND;TZID=Europe/Vienna:20261215T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Ehrenreich D. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261217@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261217T060000
+DTEND;TZID=Europe/Vienna:20261217T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Hotter P. (B1T Rolle T)\, Wienerroither C (B1B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261218@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261218T063000
+DTEND;TZID=Europe/Vienna:20261218T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Obereder J. (B2T Rolle T)\, Schneckenleit.F (B2B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261221@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261221T063000
+DTEND;TZID=Europe/Vienna:20261221T173000
+SUMMARY:T2F - Tour T2 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: T2F\; Dienst: Tour T2 - Fahre
+ r - 06:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Mete A. (T2T Rolle T)\, Obereder J. (T2B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261222@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261222T063000
+DTEND;TZID=Europe/Vienna:20261222T173000
+SUMMARY:T1F - Tour T1 - Fahrer - 06:30-17:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: T1F\; Dienst: Tour T1 - Fahre
+ r - 06:30-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Schneckenleit.F (T1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261223@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261223T063000
+DTEND;TZID=Europe/Vienna:20261223T183000
+SUMMARY:B2F - Tour B2 - Fahrer - 06:30-18:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B2F\; Dienst: Tour B2 - Fahre
+ r - 06:30-18:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Obereder J. (B2T Rolle T)\, Sykyta J. (B2B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261224@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261224T080000
+DTEND;TZID=Europe/Vienna:20261224T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Dunkelmann L. (B3T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261228@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261228T060000
+DTEND;TZID=Europe/Vienna:20261228T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Prenninger J. (B1B Rolle B)\, Schneckenleit.F (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261229@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261229T070000
+DTEND;TZID=Europe/Vienna:20261229T173000
+SUMMARY:T4F - Tour T4 - Fahrer - 07:00-17:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: T4F\; Dienst: Tour T4 - Fahre
+ r - 07:00-17:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Ebner L. (T4T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261230@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261230T060000
+DTEND;TZID=Europe/Vienna:20261230T180000
+SUMMARY:B1F - Tour B1 - Fahrer - 06:00-18:00
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B1F\; Dienst: Tour B1 - Fahre
+ r - 06:00-18:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: Fleckl L. (B1B Rolle B)\, Tisvani E. (B1T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:lesiw-m-20261231@kalender-automation.local
+DTSTAMP:20261114T074441Z
+DTSTART;TZID=Europe/Vienna:20261231T080000
+DTEND;TZID=Europe/Vienna:20261231T193000
+SUMMARY:B3F - Tour B3 - Fahrer - 08:00-19:30
+DESCRIPTION:Person: Lesiw M.\; Dienstkürzel: B3F\; Dienst: Tour B3 - Fahre
+ r - 08:00-19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglie
+ der: keine weiteren erkannt
+END:VEVENT
+END:VCALENDAR
