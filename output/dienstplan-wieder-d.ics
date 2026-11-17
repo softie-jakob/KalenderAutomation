@@ -1,0 +1,575 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Kalender Automation//Dienstplan//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Dienstplan Wieder D.
+X-WR-TIMEZONE:Europe/Vienna
+BEGIN:VTIMEZONE
+TZID:Europe/Vienna
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:wieder-d-20261001@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:05B - Unbekanntes Dienstkürzel
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 05B\; Dienst: Unbekanntes Di
+ enstkürzel\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder:
+  Boldisz M. (05F Rolle F)\, Müller L. (05T Rolle T)\; Dauer: 8 Stunden\; 
+ Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261002@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261002T063000
+DTEND;TZID=Europe/Vienna:20261002T183000
+SUMMARY:B2B - Tour B2 - BF - 06:30-18:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: B2B\; Dienst: Tour B2 - BF -
+  06:30-18:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Kittl V. (B2F Rolle F)\, Niedermoser N. (B2T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261005@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261005T060000
+DTEND;TZID=Europe/Vienna:20261005T180000
+SUMMARY:06B - Tour 6 - BF - 06:00-18:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 06B\; Dienst: Tour 6 - BF - 
+ 06:00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder:
+  Lettner M. (06T Rolle T)\, Schorn R. (06F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261007@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261007T063000
+DTEND;TZID=Europe/Vienna:20261007T173000
+SUMMARY:T1T - Tour T1 - TF - 06:30-17:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: T1T\; Dienst: Tour T1 - TF -
+  06:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : BFD Hauptamtlich (T1F Rolle F)\, Cossmann N. (T1F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261008@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261008T073000
+DTEND;TZID=Europe/Vienna:20261008T173000
+SUMMARY:T5T - Tour T5 - TF - 07:30-17:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: T5T\; Dienst: Tour T5 - TF -
+  07:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Stranig T. (T5F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261009@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261009T063000
+DTEND;TZID=Europe/Vienna:20261009T173000
+SUMMARY:T1T - Tour T1 - TF - 06:30-17:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: T1T\; Dienst: Tour T1 - TF -
+  06:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Pöschl J. (T1F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261012@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261012T063000
+DTEND;TZID=Europe/Vienna:20261012T173000
+SUMMARY:T3T - Tour T3 - TF - 06:30-17:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: T3T\; Dienst: Tour T3 - TF -
+  06:30-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Fürk T. (T3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261014@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261014T070000
+DTEND;TZID=Europe/Vienna:20261014T173000
+SUMMARY:T4T - Tour T4 - TF - 07:00-17:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: T4T\; Dienst: Tour T4 - TF -
+  07:00-17:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Rebenich F. (T4F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261015@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261015T063000
+DTEND;TZID=Europe/Vienna:20261015T183000
+SUMMARY:B2T - Tour B2 - TF - 06:30-18:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: B2T\; Dienst: Tour B2 - TF -
+  06:30-18:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Lang A. (B2F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261016@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261016T080000
+DTEND;TZID=Europe/Vienna:20261016T193000
+SUMMARY:B3T - Tour B3 - TF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: B3T\; Dienst: Tour B3 - TF -
+  08:00-19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Lang A. (B3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261019@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261019T060000
+DTEND;TZID=Europe/Vienna:20261019T180000
+SUMMARY:B1T - Tour B1 - TF - 06:00-18:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: B1T\; Dienst: Tour B1 - TF -
+  06:00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Edlinger V. (B1B Rolle B)\, Gasteiner M. (B1F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261021@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261021T080000
+DTEND;TZID=Europe/Vienna:20261021T193000
+SUMMARY:B3T - Tour B3 - TF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: B3T\; Dienst: Tour B3 - TF -
+  08:00-19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Benedikter C. (B3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261022@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261022T060000
+DTEND;TZID=Europe/Vienna:20261022T180000
+SUMMARY:R2B - RTW 2 - BF - 6:00-18:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: R2B\; Dienst: RTW 2 - BF - 6
+ :00-18:00\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: A
+ ichhorn S. (R2T Rolle T)\, Penninger R. (R2F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261024@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:03B - Unbekanntes Dienstkürzel
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 03B\; Dienst: Unbekanntes Di
+ enstkürzel\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder:
+  Huber P. (03T Rolle T)\, Schober D. (03F Rolle F)\; Dauer: 8 Stunden\; Be
+ ginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261027@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:A - LSt Ausbildung 8h
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 8
+ h\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine wei
+ teren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261028@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261028T080000
+DTEND;TZID=Europe/Vienna:20261028T193000
+SUMMARY:B3T - Tour B3 - TF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: B3T\; Dienst: Tour B3 - TF -
+  08:00-19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Lettner F. (B3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261029@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261029T073000
+DTEND;TZID=Europe/Vienna:20261029T193000
+SUMMARY:R4B - RTW 4 - BF - 7:30-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: R4B\; Dienst: RTW 4 - BF - 7
+ :30-19:30\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: C
+ anavate M. (R4T Rolle T)\, Orkic I. (R4F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261030@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:A - LSt Ausbildung 8h
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: A\; Dienst: LSt Ausbildung 8
+ h\; Quelle: 2610 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: keine wei
+ teren erkannt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261102@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261102T070000
+DTEND;TZID=Europe/Vienna:20261102T190000
+SUMMARY:Ü1B - Tour Ü1 - BF - 07:00-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: Ü1B\; Dienst: Tour Ü1 - BF
+  - 07:00-19:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglied
+ er: Malli L. (Ü1T Rolle T)\, Schmeißer S. (Ü1F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261103@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261103T073000
+DTEND;TZID=Europe/Vienna:20261103T193000
+SUMMARY:R3B - RTW 3 - BF - 7:30-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: R3B\; Dienst: RTW 3 - BF - 7
+ :30-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder: O
+ berhamberger F (R3T Rolle T)\, Weisshuhn G. (R3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261105@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:02T - Unbekanntes Dienstkürzel
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 02T\; Dienst: Unbekanntes Di
+ enstkürzel\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder:
+  Pichler P. (02F Rolle F)\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261106@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261106T080000
+DTEND;TZID=Europe/Vienna:20261106T193000
+SUMMARY:14B - Tour 14 - BF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 14B\; Dienst: Tour 14 - BF -
+  08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Mairoll T. (14T Rolle T)\, Obereder S. (14F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261109@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261109T073000
+DTEND;TZID=Europe/Vienna:20261109T173000
+SUMMARY:T6T - Tour T6 - TF - 07:30-17:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: T6T\; Dienst: Tour T6 - TF -
+  07:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Rebenich F. (T6F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261110@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261110T070000
+DTEND;TZID=Europe/Vienna:20261110T173000
+SUMMARY:T4T - Tour T4 - TF - 07:00-17:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: T4T\; Dienst: Tour T4 - TF -
+  07:00-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : keine weiteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261111@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261111T064500
+DTEND;TZID=Europe/Vienna:20261111T190000
+SUMMARY:SAT - Tour SK 2- TF - 06:45-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: SAT\; Dienst: Tour SK 2- TF 
+ - 06:45-19:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitgliede
+ r: Eder O. (SAF Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261112@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261112T080000
+DTEND;TZID=Europe/Vienna:20261112T193000
+SUMMARY:B3T - Tour B3 - TF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: B3T\; Dienst: Tour B3 - TF -
+  08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Gasteiner M. (B3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261116@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261116T103000
+DTEND;TZID=Europe/Vienna:20261116T193000
+SUMMARY:08T - Tour 8 - TF - 10:30 -19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 08T\; Dienst: Tour 8 - TF - 
+ 10:30 -19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : keine weiteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261117@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261117T080000
+DTEND;TZID=Europe/Vienna:20261117T193000
+SUMMARY:15B - Tour 15 - BF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 15B\; Dienst: Tour 15 - BF -
+  08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Seeleitner G. (15F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261118@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261118T073000
+DTEND;TZID=Europe/Vienna:20261118T173000
+SUMMARY:T5T - Tour T5 - TF - 07:30-17:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: T5T\; Dienst: Tour T5 - TF -
+  07:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Obereder S. (T5F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261120@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261120T070000
+DTEND;TZID=Europe/Vienna:20261120T190000
+SUMMARY:19B - Tour 19 - B - 07:00-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 19B\; Dienst: Tour 19 - B - 
+ 07:00-19:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder:
+  Janschütz K. (19T Rolle T)\, Klein T. (19F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261123@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261123T080000
+DTEND;TZID=Europe/Vienna:20261123T193000
+SUMMARY:15B - Tour 15 - BF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 15B\; Dienst: Tour 15 - BF -
+  08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Bürger R. (15F Rolle F)\, Daurer R. (15T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261125@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261125T080000
+DTEND;TZID=Europe/Vienna:20261125T193000
+SUMMARY:B3T - Tour B3 - TF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: B3T\; Dienst: Tour B3 - TF -
+  08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Lesiw M. (B3F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261126@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261126T073000
+DTEND;TZID=Europe/Vienna:20261126T173000
+SUMMARY:T5T - Tour T5 - TF - 07:30-17:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: T5T\; Dienst: Tour T5 - TF -
+  07:30-17:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : keine weiteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261127@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261127T080000
+DTEND;TZID=Europe/Vienna:20261127T193000
+SUMMARY:13B - Tour 13 - BF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 13B\; Dienst: Tour 13 - BF -
+  08:00-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Benedikter C. (13F Rolle F)\, Cikic B. (13T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261128@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261128T113000
+DTEND;TZID=Europe/Vienna:20261128T193000
+SUMMARY:10B - Tour 10 - BF - 11:30-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 10B\; Dienst: Tour 10 - BF -
+  11:30-19:30\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder
+ : Justa R. (10T Rolle T)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261130@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261130T070000
+DTEND;TZID=Europe/Vienna:20261130T190000
+SUMMARY:19B - Tour 19 - B - 07:00-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 19B\; Dienst: Tour 19 - B - 
+ 07:00-19:00\; Quelle: 2611 V3.pdf\; Planversion: 3\; Besatzungsmitglieder:
+  Machmudian J. (19T Rolle T)\, Schroffner F. (19F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261201@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:U - Urlaub
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: U\; Dienst: Urlaub\; Quelle:
+  2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren erkan
+ nt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261202@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:U - Urlaub
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: U\; Dienst: Urlaub\; Quelle:
+  2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren erkan
+ nt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261203@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:U - Urlaub
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: U\; Dienst: Urlaub\; Quelle:
+  2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren erkan
+ nt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261204@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:U - Urlaub
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: U\; Dienst: Urlaub\; Quelle:
+  2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren erkan
+ nt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261205@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:U - Urlaub
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: U\; Dienst: Urlaub\; Quelle:
+  2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren erkan
+ nt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261206@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:U - Urlaub
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: U\; Dienst: Urlaub\; Quelle:
+  2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine weiteren erkan
+ nt\; Dauer: 8 Stunden\; Beginn laut Plan unbekannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261207@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261207T070000
+DTEND;TZID=Europe/Vienna:20261207T190000
+SUMMARY:20T - Tour 20 - T - 07:00-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 20T\; Dienst: Tour 20 - T - 
+ 07:00-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder:
+  Dorfer L. (20F Rolle F)\, Schönbauer V. (20B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261209@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261209T070000
+DTEND;TZID=Europe/Vienna:20261209T180000
+SUMMARY:FD - Fahrdienstreserve
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: FD\; Dienst: Fahrdienstreser
+ ve\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine we
+ iteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261211@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261211T070000
+DTEND;TZID=Europe/Vienna:20261211T190000
+SUMMARY:20T - Tour 20 - T - 07:00-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 20T\; Dienst: Tour 20 - T - 
+ 07:00-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder:
+  Prehauser T. (20F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261214@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261214T070000
+DTEND;TZID=Europe/Vienna:20261214T180000
+SUMMARY:FD - Fahrdienstreserve
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: FD\; Dienst: Fahrdienstreser
+ ve\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine we
+ iteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261215@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261215T070000
+DTEND;TZID=Europe/Vienna:20261215T193000
+SUMMARY:17T - Tour 17 - TF - 07:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 17T\; Dienst: Tour 17 - TF -
+  07:00-19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder
+ : Eder P. (17B Rolle B)\, Kittl V. (17F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261216@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261216T070000
+DTEND;TZID=Europe/Vienna:20261216T190000
+SUMMARY:20T - Tour 20 - T - 07:00-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 20T\; Dienst: Tour 20 - T - 
+ 07:00-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder:
+  Dorfer L. (20F Rolle F)\, Mete O. (20B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261218@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261218T073000
+DTEND;TZID=Europe/Vienna:20261218T193000
+SUMMARY:R4B - RTW 4 - BF - 7:30-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: R4B\; Dienst: RTW 4 - BF - 7
+ :30-19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: S
+ teinacher M. (R4T Rolle T)\, Weisshuhn G. (R4F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261219@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261219T080000
+DTEND;TZID=Europe/Vienna:20261219T193000
+SUMMARY:14T - Tour 14- TF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 14T\; Dienst: Tour 14- TF - 
+ 08:00-19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder:
+  Rebenich F. (14F Rolle F)\, Schmidbaur R. (14B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261221@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261221T073000
+DTEND;TZID=Europe/Vienna:20261221T190000
+SUMMARY:18T - Tour 18 - T - 07:30-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 18T\; Dienst: Tour 18 - T - 
+ 07:30-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder:
+  Göschl M. (18F Rolle F)\, Schönbauer V. (18B Rolle B)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261222@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261222T070000
+DTEND;TZID=Europe/Vienna:20261222T180000
+SUMMARY:FD - Fahrdienstreserve
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: FD\; Dienst: Fahrdienstreser
+ ve\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder: keine we
+ iteren erkannt
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261223@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261223T080000
+DTEND;TZID=Europe/Vienna:20261223T193000
+SUMMARY:11T - Tour 11 - TF - 08:00-19:30
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 11T\; Dienst: Tour 11 - TF -
+  08:00-19:30\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder
+ : Haritopoulos M. (11F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261229@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261229T070000
+DTEND;TZID=Europe/Vienna:20261229T190000
+SUMMARY:20T - Tour 20 - T - 07:00-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 20T\; Dienst: Tour 20 - T - 
+ 07:00-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder:
+  Rossi D. (20F Rolle F)
+END:VEVENT
+BEGIN:VEVENT
+UID:wieder-d-20261230@kalender-automation.local
+DTSTAMP:20261117T193157Z
+DTSTART;TZID=Europe/Vienna:20261230T070000
+DTEND;TZID=Europe/Vienna:20261230T190000
+SUMMARY:20T - Tour 20 - T - 07:00-19:00
+DESCRIPTION:Person: Wieder D.\; Dienstkürzel: 20T\; Dienst: Tour 20 - T - 
+ 07:00-19:00\; Quelle: 2612 V1.pdf\; Planversion: 1\; Besatzungsmitglieder:
+  Prehauser T. (20F Rolle F)
+END:VEVENT
+END:VCALENDAR

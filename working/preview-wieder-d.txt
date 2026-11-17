@@ -1,0 +1,66 @@
+Person: Wieder D.
+Quelle: Mehrere Dienstpläne
+Plan: 020RKT, Version: 1
+Zeitraum: 01.10.2026–31.12.2026
+
+Termine:
+01.10.2026  05B  ganztägig; Beginn unbekannt  Unbekanntes Dienstkürzel
+02.10.2026  B2B  06:30–18:30  Tour B2 - BF - 06:30-18:30
+05.10.2026  06B  06:00–18:00  Tour 6 - BF - 06:00-18:00
+07.10.2026  T1T  06:30–17:30  Tour T1 - TF - 06:30-17:30
+08.10.2026  T5T  07:30–17:30  Tour T5 - TF - 07:30-17:30
+09.10.2026  T1T  06:30–17:30  Tour T1 - TF - 06:30-17:30
+12.10.2026  T3T  06:30–17:30  Tour T3 - TF - 06:30-17:30
+14.10.2026  T4T  07:00–17:30  Tour T4 - TF - 07:00-17:30
+15.10.2026  B2T  06:30–18:30  Tour B2 - TF - 06:30-18:30
+16.10.2026  B3T  08:00–19:30  Tour B3 - TF - 08:00-19:30
+19.10.2026  B1T  06:00–18:00  Tour B1 - TF - 06:00-18:00
+21.10.2026  B3T  08:00–19:30  Tour B3 - TF - 08:00-19:30
+22.10.2026  R2B  06:00–18:00  RTW 2 - BF - 6:00-18:00
+24.10.2026  03B  ganztägig; Beginn unbekannt  Unbekanntes Dienstkürzel
+27.10.2026  A    ganztägig; Beginn unbekannt  LSt Ausbildung 8h
+28.10.2026  B3T  08:00–19:30  Tour B3 - TF - 08:00-19:30
+29.10.2026  R4B  07:30–19:30  RTW 4 - BF - 7:30-19:30
+30.10.2026  A    ganztägig; Beginn unbekannt  LSt Ausbildung 8h
+02.11.2026  Ü1B  07:00–19:00  Tour Ü1 - BF - 07:00-19:00
+03.11.2026  R3B  07:30–19:30  RTW 3 - BF - 7:30-19:30
+05.11.2026  02T  ganztägig; Beginn unbekannt  Unbekanntes Dienstkürzel
+06.11.2026  14B  08:00–19:30  Tour 14 - BF - 08:00-19:30
+09.11.2026  T6T  07:30–17:30  Tour T6 - TF - 07:30-17:30
+10.11.2026  T4T  07:00–17:30  Tour T4 - TF - 07:00-17:30
+11.11.2026  SAT  06:45–19:00  Tour SK 2- TF - 06:45-19:00
+12.11.2026  B3T  08:00–19:30  Tour B3 - TF - 08:00-19:30
+16.11.2026  08T  10:30–19:30  Tour 8 - TF - 10:30 -19:30
+17.11.2026  15B  08:00–19:30  Tour 15 - BF - 08:00-19:30
+18.11.2026  T5T  07:30–17:30  Tour T5 - TF - 07:30-17:30
+20.11.2026  19B  07:00–19:00  Tour 19 - B - 07:00-19:00
+23.11.2026  15B  08:00–19:30  Tour 15 - BF - 08:00-19:30
+25.11.2026  B3T  08:00–19:30  Tour B3 - TF - 08:00-19:30
+26.11.2026  T5T  07:30–17:30  Tour T5 - TF - 07:30-17:30
+27.11.2026  13B  08:00–19:30  Tour 13 - BF - 08:00-19:30
+28.11.2026  10B  11:30–19:30  Tour 10 - BF - 11:30-19:30
+30.11.2026  19B  07:00–19:00  Tour 19 - B - 07:00-19:00
+01.12.2026  U    ganztägig; Beginn unbekannt  Urlaub
+02.12.2026  U    ganztägig; Beginn unbekannt  Urlaub
+03.12.2026  U    ganztägig; Beginn unbekannt  Urlaub
+04.12.2026  U    ganztägig; Beginn unbekannt  Urlaub
+05.12.2026  U    ganztägig; Beginn unbekannt  Urlaub
+06.12.2026  U    ganztägig; Beginn unbekannt  Urlaub
+07.12.2026  20T  07:00–19:00  Tour 20 - T - 07:00-19:00
+09.12.2026  FD   07:00–18:00  Fahrdienstreserve
+11.12.2026  20T  07:00–19:00  Tour 20 - T - 07:00-19:00
+14.12.2026  FD   07:00–18:00  Fahrdienstreserve
+15.12.2026  17T  07:00–19:30  Tour 17 - TF - 07:00-19:30
+16.12.2026  20T  07:00–19:00  Tour 20 - T - 07:00-19:00
+18.12.2026  R4B  07:30–19:30  RTW 4 - BF - 7:30-19:30
+19.12.2026  14T  08:00–19:30  Tour 14- TF - 08:00-19:30
+21.12.2026  18T  07:30–19:00  Tour 18 - T - 07:30-19:00
+22.12.2026  FD   07:00–18:00  Fahrdienstreserve
+23.12.2026  11T  08:00–19:30  Tour 11 - TF - 08:00-19:30
+29.12.2026  20T  07:00–19:00  Tour 20 - T - 07:00-19:00
+30.12.2026  20T  07:00–19:00  Tour 20 - T - 07:00-19:00
+
+Warnungen:
+- 2026-10-01: Kürzel '05B' fehlt in der Legende.
+- 2026-10-24: Kürzel '03B' fehlt in der Legende.
+- 2026-11-05: Kürzel '02T' fehlt in der Legende.
